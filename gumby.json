@@ -1,0 +1,18 @@
+{
+	"build": {
+		"gumbyPath": "bower_components/gumby",
+		"outPath": "js"
+        },
+        "modules": [
+            "fixed",
+            "navbar",
+            "retina",
+            "skiplink"
+        ],
+        "addons": [
+            "bower_components/gumby-parallax/gumby.parallax.js",
+            "bower_components/gumby-inview/gumby.inview.js",
+            "bower_components/gumby-images/gumby.images.js",
+            "bower_components/snap.svg/dist/snap.svg.js"
+        ]
+}

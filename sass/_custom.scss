@@ -1,0 +1,243 @@
+// Your custom SCSS should be written here...
+
+
+
+
+// BACKGROUND IMAGES THROUGHOUT START =========
+.parallax{
+
+}
+.parallax1{
+    background: url(../img/about-bg.jpg) no-repeat;
+    background-size: cover;
+
+}
+.parallax2{
+background: url(../img/geometry.png) repeat;
+
+}
+
+.parallax3{
+
+    background: url(../img/forum5.png) no-repeat;
+    background-size: cover;
+
+}
+.parallax4{
+    background: url(../img/AlphaGraph4.png) no-repeat;
+    background-size: cover;
+}
+.parallaxFAQ{
+  background: url(../img/kkot-chalk3.jpg) repeat;
+  background-size: cover;
+
+  height: 100%;
+}
+// BACKGROUND IMAGES THROUGHOUT END =========
+
+
+
+
+
+.test1{
+   text-align: center;
+   background-color: rgba(25,25,25,0.2)
+}
+.test2{
+   text-align: center;
+   background-color: rgba(173,216,230,0.4)
+}
+.test3{
+   text-align: left;
+   padding-left: 0px;
+   background-color: rgba(25,25,25,0.4)
+}
+.mainClientWrap{
+   margin-top: 70px;
+}
+.mainClient{
+   text-align: left;
+   margin-top: 6%;
+
+   h3{
+      font-weight: 500;
+      padding-left: 1%;
+   }
+   p{
+      font-weight: 300;
+      margin-bottom: 30px;
+      padding-left: 1%;
+      font-size: 100%;
+   }
+   .button{
+      width: 300px;
+      text-align: center;
+   }
+}
+
+.comingS{
+   font-weight: 500;
+font-size: $norm;
+color: #444 !important;
+}
+.thirdPartyButton{
+   padding-right: -30px;
+}
+.thirdParty{
+   text-align: right;
+   margin-bottom: 50px;
+   h3{
+      font-weight: 500;
+   }
+   p{
+      margin-left: 16%;
+      font-weight: 300;
+   }
+}
+.stats{
+   text-align: center;
+   background-color: #444;
+   padding-top: 70px;
+   padding-bottom: 70px;
+
+   .statNumbers{
+      font-size: 300%;
+      margin-bottom: 20px;
+      color: #41bf76;
+      font-weight: 300;
+   }
+   .statWords{
+      font-size: $norm;
+      color: white;
+   }
+}
+
+.clientNem{
+   padding-top: 70px;
+   padding-bottom: 70px;
+}
+
+.purchase .ten.columns.centered{
+   margin-top: 20px;
+   text-align: center;
+}
+
+.arrows{
+   padding-top: 16px;
+   width: 60px;
+}
+.money{
+   width: 170px;
+}
+.bitcoin{
+    width: 65px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.nemIcon{
+    width: 65px;
+    padding-top: 13px;
+}
+
+.button {
+  margin: .4em;
+  padding: .8em;
+  cursor: pointer;
+  background: transparent;
+  text-decoration: none;
+  border: 3px solid #444;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 500;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  width: 160px;
+  @include border-radius(3px);
+}
+
+.buyGuide{
+    position: relative;
+    margin-top: 50px;
+    margin-bottom: 70px !important;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    width: 100% !important;
+    margin-bottom: 30px;
+    background-color: transparent;
+    text-align: center;
+    left: -2000px;
+    @include transition(all 1.5s);
+     @include transition-timing-function(ease-out);
+}
+.buyGuide.onscreen {
+    left: 0px;
+}
+.comingSoon{
+border: none;
+}
+.heading3{
+    padding-top: 70px;
+    padding-bottom: 50px;
+      background: transparent;
+    text-align: center;
+}
+
+.border{
+    min-height: 340px;
+    padding: 2%;
+    margin-top: 0px;
+    background-color: white;
+}
+
+.faqs{
+   .four.columns{
+      text-align: center;
+   }
+   background-color: #fefef6;
+   color: #40cd7e;
+   li{
+      @include font-size($norm);
+    i{
+      font-size: $large;
+      margin-top: 3px;
+      margin-bottom: 3px;
+      padding: 10px;
+      color: #444;
+      background-color: #f6f6f6;
+      @include border-radius(3px);
+   }
+}
+}
+#footer{
+    text-align: left;
+    background-color: #444;
+    padding-top: 30px;
+}
+.footLinks {
+   margin-bottom: 50px;
+ul {
+    li {
+      line-height:1.2em;
+        @include font-size($small);
+        &:first-child a {
+            font-weight: bold;
+            font-size: 120%;
+            margin-bottom: 25px !important;
+            line-height:2.9em;
+        }
+    }
+}
+}
+.lowerFooter{
+   padding-top: 5px;
+   padding-bottom: 5px;
+    background-color: #2f2f2f;
+    color: white;
+}
+.license{
+   text-align: left;
+   font-size: $small;
+}
+.socialFooter{
+   text-align: right;
+   font-size: 20px;
+}
