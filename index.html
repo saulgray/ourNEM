@@ -36,6 +36,7 @@
 	<!-- We highly recommend you use SASS and write your custom styles in sass/_custom.scss.
 		 However, there is a blank style.css in the css directory should you prefer -->
 	<link rel="stylesheet" href="css/gumby.css">
+
 	<!-- <link rel="stylesheet" href="css/style.css"> -->
 
 	<script src="bower_components/gumby/js/libs/modernizr-2.6.2.min.js"></script>
@@ -112,18 +113,20 @@
 
 <div class="parallax parallax1" gumby-parallax=".5">
 
-   <div class="row mainClientWrap" id="some-element">
-  <div class="push_six six columns test2 mainClient">
+   <div class="row mainClientWrap">
+  <div class="push_six six columns test2 mainClient container">
     <h3>
       NEM Community Client
     </h3>
   <p>Open the Full Featured NEM Beta Client in your web browser, a simple two step process.</p>
-  <ul class="buttons">
-     <li><a href="#" class="button hover-shadow gray">INSTALL NEM COMMUNITY CLIENT</a></li>
-  </ul>
+<section class="">
+	<p>
+
+    <a href="#" class="btn btn-1 btn-1e button hover-shadow gray">INSTALL NEM COMMUNITY CLIENT</a>
+
   <p>Need help with installing the NEM Client? <a href="#">Follow our easy guide</a></p>
 
-
+</section>
 
 
     <!-- Look I'm first in the markup, but second on the screen! -->
@@ -370,7 +373,22 @@ Et anim adipisicing nulla laboris amet voluptate reprehenderit fugiat amet est l
    </div>
 </div>
 </div>
+<div class="container">
+	<!-- Top Navigation -->
 
+	<section class="">
+		<p>
+			<button class="btn btn-1 btn-1a">Button</button>
+			<button class="btn btn-1 btn-1b">Button</button>
+			<button class="btn btn-1 btn-1c">Button</button>
+		</p>
+		<p>
+			<button class="btn btn-1 btn-1d">Button</button>
+			<button class="btn btn-1 btn-1e">Button</button>
+			<button class="btn btn-1 btn-1f">Button</button>
+		</p>
+	</section>
+</div>
 
 	<!-- Grab Google CDN's jQuery, fall back to local if offline -->
 	<!-- 2.0 for modern browsers, 1.10 for .oldie -->

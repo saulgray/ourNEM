@@ -114,19 +114,16 @@ nav{
    background: pink !important;
    color: red;
 }
-.test1{
-   text-align: center;
-   background-color: rgba(25,25,25,0.2)
-}
-.test2{
-   text-align: center;
-   background-color: rgba(173,216,230,0.4)
-}
+
 .test3{
    text-align: left;
    padding-left: 0px;
    margin-top: 70px;
-   background-color: rgba(25,25,25,0.4)
+z-index: -11111;
+}
+.test2{
+   position: relative;
+   z-index: 1;
 }
 .mainClientWrap{
    margin-top: 0px;
@@ -146,7 +143,7 @@ nav{
       font-size: 100%;
    }
    .button{
-      width: 300px;
+      width: 350px;
       text-align: center;
    }
 }
@@ -317,3 +314,91 @@ ul {
    text-align: right;
    font-size: 20px;
 }
+
+
+
+/* BUTTON STYLING START */
+.btn {
+   border: none;
+   font-family: inherit;
+   font-size: inherit;
+   color: inherit;
+   background: none;
+   cursor: pointer;
+   padding: 12px 12px !important;
+   display: inline-block;
+   margin: 0px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   outline: none;
+   position: relative;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   transition: all 0.3s;
+}
+
+.btn:after {
+   content: '';
+   position: absolute;
+   z-index: -1;
+   -webkit-transition: all 0.3s;
+   -moz-transition: all 0.3s;
+   transition: all 0.3s;
+}
+
+/* Pseudo elements for icons */
+.btn:before,
+.icon-heart:after,
+.icon-star:after,
+.icon-plus:after,
+.icon-file:before {
+   font-family: 'icomoon';
+   speak: none;
+   font-style: normal;
+   font-weight: normal;
+   font-variant: normal;
+   text-transform: none;
+   line-height: 1;
+   position: relative;
+   -webkit-font-smoothing: antialiased;
+}
+
+/* Button 1 */
+.btn-1 {
+   border: 3px solid #444;
+   color: #444;
+}
+
+/* Button 1e */
+.btn-1e {
+   overflow: hidden;
+}
+
+.btn-1e:after {
+   width: 100%;
+   height: 0;
+   top: 50%;
+   left: 50%;
+   background: #444;
+   opacity: 0;
+   -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+   -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+   -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+   transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.btn-1e:hover,
+.btn-1e:active {
+   color: white;
+}
+/* background size */
+.btn-1e:hover:after {
+   height: 560%;
+   opacity: 1;
+}
+
+.btn-1e:active:after {
+   height: 520%;
+   opacity: 1;
+}
+/* BUTTON STYLING END */
