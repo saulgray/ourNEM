@@ -5,6 +5,7 @@
 	top:-55px;
 	width: 100%;
 	background: white;
+   z-index: 10;
    @include hidden(all-phones);
    @include hidden(portrait-tablets);
 }
@@ -119,7 +120,7 @@ nav{
    text-align: left;
    padding-left: 0px;
    margin-top: 70px;
-z-index: -11111;
+   z-index: -11111;
 }
 .test2{
    position: relative;
@@ -130,27 +131,37 @@ z-index: -11111;
 }
 .mainClient{
    text-align: left;
-   margin-top: 160px;
+   margin-top: 140px;
 
    h3{
-      font-weight: 500;
-      padding-left: 1%;
+      font-weight: 700;
+      padding-left: 0%;
+      margin-bottom: 7px;
    }
-   p{
+   .descrip{
       font-weight: 300;
       margin-bottom: 30px;
-      padding-left: 1%;
-      font-size: 100%;
+      padding-left: 0%;
+      font-size: 105%;
    }
+   p{
+      margin-bottom: 0px;
    .button{
-      width: 350px;
+      width: 260px;
       text-align: center;
+      margin-bottom: 0px !important;
+      }
    }
+}
+.needHelp{
+   padding-left: 0%;
+   font-size: 95%;
+   font-weight: 300;
 }
 
 .comingS{
    font-weight: 500;
-font-size: $norm;
+font-size: 12px;
 color: #444 !important;
 }
 .thirdPartyButton{
@@ -160,7 +171,7 @@ color: #444 !important;
    text-align: right;
    margin-bottom: 50px;
    h3{
-      font-weight: 500;
+      font-weight: 700;
    }
    p{
       margin-left: 16%;
@@ -193,6 +204,7 @@ color: #444 !important;
 .purchase .ten.columns.centered{
    margin-top: 20px;
    text-align: center;
+   font-weight: 300;
 }
 
 .arrows{
@@ -211,7 +223,9 @@ color: #444 !important;
     width: 65px;
     padding-top: 13px;
 }
-
+.three_up{
+   text-align: center;
+}
 .button {
   margin: .4em;
   padding: .8em;
@@ -220,7 +234,6 @@ color: #444 !important;
   text-decoration: none;
   border: 3px solid #444;
   color: #666666;
-  font-size: 14px;
   font-weight: 500;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   width: 160px;
@@ -246,6 +259,8 @@ color: #444 !important;
 }
 .comingSoon{
 border: none;
+font-size: 12px;
+font-weight: bold;
 }
 .heading3{
     padding-top: 70px;
@@ -284,31 +299,39 @@ border: none;
     text-align: left;
     background-color: #444;
     padding-top: 30px;
+    color: white;
+    a{
+      color: white;
+   }
 }
 .footLinks {
    margin-bottom: 50px;
-ul {
-    li {
-      line-height:1.2em;
-        @include font-size($small);
-        &:first-child a {
-            font-weight: bold;
-            font-size: 120%;
-            margin-bottom: 25px !important;
-            line-height:2.9em;
-        }
-    }
-}
+   p{
+      font-size: 14px;
+   }
+   ul {
+       li {
+         line-height:1em;
+           font-size: 80%;
+           font-weight: 500;
+           &:first-child a {
+               font-weight: 700;
+               font-size: 130%;
+               margin-bottom: 25px !important;
+               line-height:2.9em;
+           }
+       }
+   }
 }
 .lowerFooter{
-   padding-top: 5px;
-   padding-bottom: 5px;
+   padding-top: 8px;
+   padding-bottom: 8px;
     background-color: #2f2f2f;
-    color: white;
+    color: #a4a4a4;
 }
 .license{
    text-align: left;
-   font-size: $small;
+   font-size: 12px;
 }
 .socialFooter{
    text-align: right;
@@ -325,7 +348,7 @@ ul {
    color: inherit;
    background: none;
    cursor: pointer;
-   padding: 12px 12px !important;
+   padding: 6px 6px !important;
    display: inline-block;
    margin: 0px;
    text-transform: uppercase;
@@ -365,8 +388,9 @@ ul {
 
 /* Button 1 */
 .btn-1 {
-   border: 3px solid #444;
+   border: 2px solid #444;
    color: #444;
+   font-size: 12px;
 }
 
 /* Button 1e */
@@ -393,12 +417,14 @@ ul {
 }
 /* background size */
 .btn-1e:hover:after {
-   height: 560%;
+   height: 600%;
    opacity: 1;
 }
 
 .btn-1e:active:after {
+   /*
    height: 520%;
    opacity: 1;
+   */
 }
 /* BUTTON STYLING END */

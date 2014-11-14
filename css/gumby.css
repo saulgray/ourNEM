@@ -1682,7 +1682,7 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 .ie9 .radio.checked i, .ie9 .checkbox.checked i { top: 0; }
 
-#headerSlideContainer { position: fixed; top: -55px; width: 100%; background: white; }
+#headerSlideContainer { position: fixed; top: -55px; width: 100%; background: white; z-index: 10; }
 @media only screen and (max-width: 767px) { #headerSlideContainer { display: none !important; } }
 @media only screen and (max-width: 768px) { #headerSlideContainer { display: none !important; } }
 
@@ -1729,17 +1729,20 @@ nav .eight.columns a { text-align: right; }
 
 .mainClientWrap { margin-top: 0px; }
 
-.mainClient { text-align: left; margin-top: 160px; }
-.mainClient h3 { font-weight: 500; padding-left: 1%; }
-.mainClient p { font-weight: 300; margin-bottom: 30px; padding-left: 1%; font-size: 100%; }
-.mainClient .button { width: 350px; text-align: center; }
+.mainClient { text-align: left; margin-top: 140px; }
+.mainClient h3 { font-weight: 700; padding-left: 0%; margin-bottom: 7px; }
+.mainClient .descrip { font-weight: 300; margin-bottom: 30px; padding-left: 0%; font-size: 105%; }
+.mainClient p { margin-bottom: 0px; }
+.mainClient p .button { width: 260px; text-align: center; margin-bottom: 0px !important; }
 
-.comingS { font-weight: 500; font-size: 16px; color: #444 !important; }
+.needHelp { padding-left: 0%; font-size: 95%; font-weight: 300; }
+
+.comingS { font-weight: 500; font-size: 12px; color: #444 !important; }
 
 .thirdPartyButton { padding-right: -30px; }
 
 .thirdParty { text-align: right; margin-bottom: 50px; }
-.thirdParty h3 { font-weight: 500; }
+.thirdParty h3 { font-weight: 700; }
 .thirdParty p { margin-left: 16%; font-weight: 300; }
 
 .stats { text-align: center; background-color: #444; padding-top: 70px; padding-bottom: 70px; }
@@ -1748,7 +1751,7 @@ nav .eight.columns a { text-align: right; }
 
 .clientNem { padding-top: 70px; padding-bottom: 70px; }
 
-.purchase .ten.columns.centered { margin-top: 20px; text-align: center; }
+.purchase .ten.columns.centered { margin-top: 20px; text-align: center; font-weight: 300; }
 
 .arrows { padding-top: 16px; width: 60px; }
 
@@ -1758,13 +1761,15 @@ nav .eight.columns a { text-align: right; }
 
 .nemIcon { width: 65px; padding-top: 13px; }
 
-.button { margin: .4em; padding: .8em; cursor: pointer; background: transparent; text-decoration: none; border: 3px solid #444; color: #666666; font-size: 14px; font-weight: 500; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 160px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
+.three_up { text-align: center; }
+
+.button { margin: .4em; padding: .8em; cursor: pointer; background: transparent; text-decoration: none; border: 3px solid #444; color: #666666; font-weight: 500; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 160px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
 
 .buyGuide { position: relative; margin-top: 50px; margin-bottom: 70px !important; padding-top: 10px; margin-bottom: 10px; width: 100% !important; margin-bottom: 30px; background-color: transparent; text-align: center; left: -2000px; -webkit-transition: all 1.5s; -moz-transition: all 1.5s; -o-transition: all 1.5s; transition: all 1.5s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; }
 
 .buyGuide.onscreen { left: 0px; }
 
-.comingSoon { border: none; }
+.comingSoon { border: none; font-size: 12px; font-weight: bold; }
 
 .heading3 { padding-top: 70px; padding-bottom: 50px; background: transparent; text-align: center; }
 
@@ -1775,20 +1780,22 @@ nav .eight.columns a { text-align: right; }
 .faqs li { font-size: 16px; font-size: 1rem; }
 .faqs li i { font-size: 26px; margin-top: 3px; margin-bottom: 3px; padding: 10px; color: #444; background-color: #f6f6f6; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
 
-#footer { text-align: left; background-color: #444; padding-top: 30px; }
+#footer { text-align: left; background-color: #444; padding-top: 30px; color: white; }
+#footer a { color: white; }
 
 .footLinks { margin-bottom: 50px; }
-.footLinks ul li { line-height: 1.2em; font-size: 10px; font-size: 0.625rem; }
-.footLinks ul li:first-child a { font-weight: bold; font-size: 120%; margin-bottom: 25px !important; line-height: 2.9em; }
+.footLinks p { font-size: 14px; }
+.footLinks ul li { line-height: 1em; font-size: 80%; font-weight: 500; }
+.footLinks ul li:first-child a { font-weight: 700; font-size: 130%; margin-bottom: 25px !important; line-height: 2.9em; }
 
-.lowerFooter { padding-top: 5px; padding-bottom: 5px; background-color: #2f2f2f; color: white; }
+.lowerFooter { padding-top: 8px; padding-bottom: 8px; background-color: #2f2f2f; color: #a4a4a4; }
 
-.license { text-align: left; font-size: 10px; }
+.license { text-align: left; font-size: 12px; }
 
 .socialFooter { text-align: right; font-size: 20px; }
 
 /* BUTTON STYLING START */
-.btn { border: none; font-family: inherit; font-size: inherit; color: inherit; background: none; cursor: pointer; padding: 12px 12px !important; display: inline-block; margin: 0px; text-transform: uppercase; letter-spacing: 1px; outline: none; position: relative; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
+.btn { border: none; font-family: inherit; font-size: inherit; color: inherit; background: none; cursor: pointer; padding: 6px 6px !important; display: inline-block; margin: 0px; text-transform: uppercase; letter-spacing: 1px; outline: none; position: relative; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
 
 .btn:after { content: ''; position: absolute; z-index: -1; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; transition: all 0.3s; }
 
@@ -1796,7 +1803,7 @@ nav .eight.columns a { text-align: right; }
 .btn:before, .icon-heart:after, .icon-star:after, .icon-plus:after, .icon-file:before { font-family: 'icomoon'; speak: none; font-style: normal; font-weight: normal; font-variant: normal; text-transform: none; line-height: 1; position: relative; -webkit-font-smoothing: antialiased; }
 
 /* Button 1 */
-.btn-1 { border: 3px solid #444; color: #444; }
+.btn-1 { border: 2px solid #444; color: #444; font-size: 12px; }
 
 /* Button 1e */
 .btn-1e { overflow: hidden; }
@@ -1806,8 +1813,11 @@ nav .eight.columns a { text-align: right; }
 .btn-1e:hover, .btn-1e:active { color: white; }
 
 /* background size */
-.btn-1e:hover:after { height: 560%; opacity: 1; }
+.btn-1e:hover:after { height: 600%; opacity: 1; }
 
-.btn-1e:active:after { height: 520%; opacity: 1; }
+.btn-1e:active:after { /*
+height: 520%;
+opacity: 1;
+*/ }
 
 /* BUTTON STYLING END */
