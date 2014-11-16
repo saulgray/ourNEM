@@ -1694,7 +1694,7 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 .parallax { background-attachment: fixed !important; }
 
-.parallax1 { background: url(../img/about-bg.jpg) no-repeat; background-size: cover; margin-top: 0px; padding-top: 0px; height: 70%; }
+.parallax1 { background: url(../img/about-bg.jpg) no-repeat; background-size: cover; margin-top: 0px; padding-top: 0px; }
 
 .parallax2 { background: url(../img/geometry.png) repeat; }
 
@@ -1831,17 +1831,25 @@ text-align: inherit;
 @media only screen and (max-width: 767px) { #headerSlideContainer { display: none !important; } }
 @media only screen and (max-width: 768px) { #headerSlideContainer { display: none !important; } }
 
-@media only screen and (max-width: 768px) { .parallax1 { min-height: 700px; } }
+@media only screen and (max-width: 768px) { .navbar ul { background: white; padding-right: 4%; } }
+
+@media only screen and (max-width: 768px) { .parallax1 { min-height: 560px; } }
+
+@media only screen and (max-width: 768px) { .thirdParty { text-align: right; margin-bottom: 50px; margin-top: 20px; padding: 20px; }
+  .thirdParty h3 { font-weight: 700; }
+  .thirdParty p { margin-left: 16%; font-weight: 300; text-align: right; } }
+
+@media only screen and (max-width: 768px) { .modContent { margin-right: 15px; float: right; } }
 
 @media only screen and (min-width: 768px) { .hideDesktop { display: none !important; } }
-.hideDesktop img { width: 40%; margin-right: 15px; float: left; }
+.hideDesktop img { width: 40%; overflow: hidden; float: right; }
 
-@media only screen and (min-width: 768px) and (max-width: 1039px) { .test3 { display: none !important; } }
+@media only screen and (tablet) { .test3 { display: none !important; } }
 @media only screen and (max-width: 767px) { .test3 { display: none !important; } }
 
-@media only screen and (max-width: 768px) { .mainClient { width: 400px; border: 4px solid red; padding: 20px; overflow: hidden; } }
+@media only screen and (max-width: 768px) { .mainClient { width: 400px; padding: 20px; overflow: hidden; } }
 
-@media only screen and (max-width: 668px) { .mainClient h3 { font-size: 20px; } }
+@media only screen and (max-width: 668px) { .mainClient h3, .thirdParty h3 { font-size: 20px; } }
 
 @media only screen and (max-width: 988px) { .mainClient { text-align: left; margin-top: 10%; } }
 @media only screen and (max-width: 888px) { .mainClient { text-align: left; margin-top: 7%; } }
