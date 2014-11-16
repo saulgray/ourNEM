@@ -125,13 +125,14 @@ nav{
 .test2{
    position: relative;
    z-index: 1;
+   min-height: 62px;
 }
 .mainClientWrap{
    margin-top: 0px;
 }
 .mainClient{
    text-align: left;
-   margin-top: 140px;
+   margin-top: 14%;
 
    h3{
       font-weight: 700;
@@ -203,16 +204,21 @@ color: #444 !important;
 
 .purchase .ten.columns.centered{
    margin-top: 20px;
-   text-align: center;
    font-weight: 300;
-}
 
+}
+.purchase{
+   text-align: center !important;
+}
+.joined{
+   min-height: 230px;
+}
 .arrows{
    padding-top: 16px;
    width: 60px;
 }
 .money{
-   width: 170px;
+   width: 100px;
 }
 .bitcoin{
     width: 65px;
@@ -223,9 +229,7 @@ color: #444 !important;
     width: 65px;
     padding-top: 13px;
 }
-.three_up{
-   text-align: center;
-}
+
 .button {
   margin: .4em;
   padding: .8em;
@@ -261,6 +265,7 @@ color: #444 !important;
 border: none;
 font-size: 12px;
 font-weight: bold;
+margin-top: 132px;
 }
 .heading3{
     padding-top: 70px;
@@ -428,3 +433,119 @@ font-weight: bold;
    */
 }
 /* BUTTON STYLING END */
+/*
+.three_up {
+text-align: inherit;
+}
+*/
+// MOBILE STYLES
+#headerSlideContainer {
+   @include hidden(all-phones);
+   @include hidden(portrait-tablets);
+}
+
+
+.parallax1{
+   @include respond("max-width: 768px") {
+      min-height: 700px;
+   }
+}
+
+
+
+
+
+
+.hideDesktop{
+   @include hidden(desktop);
+   img{
+    width: 40%;
+   margin-right: 15px;
+    float: left;
+   }
+}
+
+.test3{
+   @include hidden(tablets);
+   @include hidden(all-phones);
+}
+.mainClient{
+   @include respond("max-width: 768px") {
+    width: 400px;
+    border: 4px solid red;
+    padding: 20px;
+    overflow: hidden;
+   }
+}
+.mainClient h3{
+   @include respond("max-width: 668px") {
+      font-size: 20px;
+   }
+}
+.mainClient{
+   @include respond("max-width: 988px") {
+      text-align: left;
+      margin-top: 10%;
+   }
+   @include respond("max-width: 888px") {
+      text-align: left;
+      margin-top: 7%;
+   }
+}
+.mMargin{
+   @include respond("max-width: 768px") {
+      margin-top: 30px;
+      margin-bottom: 70px;
+}
+}
+.stats .statInfo{
+  @include fancytiles(4,2,2);
+  min-height: 100px;
+  }
+.joined{
+   @include respond("max-width: 768px") {
+      min-height: 200px;
+      padding-top: 30px;
+   }
+}
+.four.columns.border{
+   @include respond("max-width: 768px") {
+      margin-top: 30px;
+      margin-left: 10px;
+      margin-right: 10px;
+   }
+}
+.purchase .three_up, .purchase .ten.columns p{
+   @include respond("max-width: 768px") {
+      text-align: center !important;
+   }
+}
+.faqs .four.columns .valign:before {
+   @include respond("max-width: 768px") {
+      height: 60px;
+      margin-top: 80px;
+   }
+}
+.faqs .eight.columns .valign:before {
+   @include respond("max-width: 768px") {
+      height: 240px;
+      margin-bottom: 40px;
+      margin-top: 0px;
+      padding-top: 0px;
+   }
+}
+.lowerFooter .socialFooter {
+  /* Change margin on tablets in portrait mode */
+  @include respond("max-width: 768px") {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+.lowerFooter .license {
+  /* Change margin on tablets in portrait mode */
+  @include respond("max-width: 768px") {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+}

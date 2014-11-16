@@ -1725,11 +1725,11 @@ nav .eight.columns a { text-align: right; }
 
 .test3 { text-align: left; padding-left: 0px; margin-top: 70px; z-index: -11111; }
 
-.test2 { position: relative; z-index: 1; }
+.test2 { position: relative; z-index: 1; min-height: 62px; }
 
 .mainClientWrap { margin-top: 0px; }
 
-.mainClient { text-align: left; margin-top: 140px; }
+.mainClient { text-align: left; margin-top: 14%; }
 .mainClient h3 { font-weight: 700; padding-left: 0%; margin-bottom: 7px; }
 .mainClient .descrip { font-weight: 300; margin-bottom: 30px; padding-left: 0%; font-size: 105%; }
 .mainClient p { margin-bottom: 0px; }
@@ -1751,17 +1751,19 @@ nav .eight.columns a { text-align: right; }
 
 .clientNem { padding-top: 70px; padding-bottom: 70px; }
 
-.purchase .ten.columns.centered { margin-top: 20px; text-align: center; font-weight: 300; }
+.purchase .ten.columns.centered { margin-top: 20px; font-weight: 300; }
+
+.purchase { text-align: center !important; }
+
+.joined { min-height: 230px; }
 
 .arrows { padding-top: 16px; width: 60px; }
 
-.money { width: 170px; }
+.money { width: 100px; }
 
 .bitcoin { width: 65px; padding-top: 15px; padding-bottom: 15px; }
 
 .nemIcon { width: 65px; padding-top: 13px; }
-
-.three_up { text-align: center; }
 
 .button { margin: .4em; padding: .8em; cursor: pointer; background: transparent; text-decoration: none; border: 3px solid #444; color: #666666; font-weight: 500; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 160px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
 
@@ -1769,7 +1771,7 @@ nav .eight.columns a { text-align: right; }
 
 .buyGuide.onscreen { left: 0px; }
 
-.comingSoon { border: none; font-size: 12px; font-weight: bold; }
+.comingSoon { border: none; font-size: 12px; font-weight: bold; margin-top: 132px; }
 
 .heading3 { padding-top: 70px; padding-bottom: 50px; background: transparent; text-align: center; }
 
@@ -1821,3 +1823,48 @@ opacity: 1;
 */ }
 
 /* BUTTON STYLING END */
+/*
+.three_up {
+text-align: inherit;
+}
+*/
+@media only screen and (max-width: 767px) { #headerSlideContainer { display: none !important; } }
+@media only screen and (max-width: 768px) { #headerSlideContainer { display: none !important; } }
+
+@media only screen and (max-width: 768px) { .parallax1 { min-height: 700px; } }
+
+@media only screen and (min-width: 768px) { .hideDesktop { display: none !important; } }
+.hideDesktop img { width: 40%; margin-right: 15px; float: left; }
+
+@media only screen and (min-width: 768px) and (max-width: 1039px) { .test3 { display: none !important; } }
+@media only screen and (max-width: 767px) { .test3 { display: none !important; } }
+
+@media only screen and (max-width: 768px) { .mainClient { width: 400px; border: 4px solid red; padding: 20px; overflow: hidden; } }
+
+@media only screen and (max-width: 668px) { .mainClient h3 { font-size: 20px; } }
+
+@media only screen and (max-width: 988px) { .mainClient { text-align: left; margin-top: 10%; } }
+@media only screen and (max-width: 888px) { .mainClient { text-align: left; margin-top: 7%; } }
+
+@media only screen and (max-width: 768px) { .mMargin { margin-top: 30px; margin-bottom: 70px; } }
+
+.stats .statInfo { display: inline-block; float: left; padding-left: 0.96154%; padding-right: 0.96154%; width: 50%; min-height: 100px; }
+@media only screen and (min-width: 0px) { .stats .statInfo { width: 50%; } }
+@media only screen and (min-width: 768px) { .stats .statInfo { width: 50%; } }
+@media only screen and (min-width: 1040px) { .stats .statInfo { width: 25%; } }
+
+@media only screen and (max-width: 768px) { .joined { min-height: 200px; padding-top: 30px; } }
+
+@media only screen and (max-width: 768px) { .four.columns.border { margin-top: 30px; margin-left: 10px; margin-right: 10px; } }
+
+@media only screen and (max-width: 768px) { .purchase .three_up, .purchase .ten.columns p { text-align: center !important; } }
+
+@media only screen and (max-width: 768px) { .faqs .four.columns .valign:before { height: 60px; margin-top: 80px; } }
+
+@media only screen and (max-width: 768px) { .faqs .eight.columns .valign:before { height: 240px; margin-bottom: 40px; margin-top: 0px; padding-top: 0px; } }
+
+.lowerFooter .socialFooter { /* Change margin on tablets in portrait mode */ }
+@media only screen and (max-width: 768px) { .lowerFooter .socialFooter { margin-bottom: 10px; margin-top: 10px; text-align: center; } }
+
+.lowerFooter .license { /* Change margin on tablets in portrait mode */ }
+@media only screen and (max-width: 768px) { .lowerFooter .license { margin-bottom: 10px; text-align: center; } }
