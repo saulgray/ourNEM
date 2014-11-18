@@ -46,7 +46,7 @@ a > span {
    position: relative;
    color: #444;
    text-decoration: none;
-   font-weight: 500;
+
    font-family: 'Roboto'
 }
 a > span:hover {
@@ -101,9 +101,10 @@ nav{
    }
    .eight.columns{
       margin-top: 2.5%;
-      text-align: right;
+      text-align: inherit;
       a{
-         text-align: right;
+         text-align: inherit;
+         font-weight: 700;
       }
    }
 }
@@ -145,19 +146,45 @@ h2.onscreen {
 }
 .test3 img{
    position: relative;
-   right: -130px;
+   right: -45%;
    opacity: 1;
    @include transition(all .8s);
    @include transition-timing-function(ease-out);
 }
 .test3 img.onscreen {
-   right: 0px;
+   right: 0%;
    opacity: 1;
 }
-.test2{
+.mainClient{
    position: relative;
    z-index: 1;
    min-height: 62px;
+}
+.clientTextSlide{
+   position: relative;
+   left: -25%;
+   opacity: 0;
+   @include transition(all .3s);
+
+}
+.clientTextSlide.onscreen {
+   left: 0%;
+   opacity: 1;
+@include transition(all .8s);
+@include transition-timing-function(ease-out);
+@include transition-delay(.7s);
+}
+.thirdParty{
+   position: relative;
+   right: -10%;
+   opacity: 0;
+   @include transition(all .8s);
+   @include transition-timing-function(ease-out);
+   @include transition-delay(1.4s);
+}
+.thirdParty.onscreen {
+   right: 0%;
+   opacity: 1;
 }
 .mainClientWrap{
    margin-top: 0px;
@@ -241,6 +268,11 @@ h2.onscreen {
 .clientNem{
    padding-top: 70px;
    padding-bottom: 70px;
+}
+.test2{
+   position: relative;
+   z-index: 1;
+   min-height: 62px;
 }
 .purchase .ten.columns.centered{
    margin-top: 20px;
@@ -338,6 +370,20 @@ h2.onscreen {
    color: #40cd7e;
    .four.columns{
       text-align: center;
+      h3{
+         right: -120%;
+         font-size: 45px;
+         position: relative;
+         opacity: 1;
+         @include transition(all 1s);
+         @include transition-timing-function(ease-out);
+         @include transition-delay(0s);
+      }
+      h3.onscreen {
+         font-size: 30px;
+         right: 0%;
+         opacity: 1;
+      }
    }
    li{
       @include font-size($norm);
@@ -349,12 +395,34 @@ h2.onscreen {
          color: #444;
          background-color: #f6f6f6;
          @include border-radius(3px);
+         left: -15%;
+         position: relative;
+         opacity: 0;
+         @include transition(all .2s);
+      }
+      i.onscreen {
+         left: 0%;
+         opacity: 1;
+         @include transition(all .6s);
+         @include transition-timing-function(ease-out);
+         @include transition-delay(.8s);
       }
    }
    span{
       color: #41bf76;
       font-size: 16px;
       font-weight: 500;
+      right: -15%;
+      position: relative;
+      opacity: 0;
+      @include transition(all .2s);
+   }
+   span.onscreen {
+      right: 0%;
+      opacity: 1;
+      @include transition(all .6s);
+      @include transition-timing-function(ease-out);
+      @include transition-delay(.8s);
    }
    a > span:hover {
       color: #41bf76 !important;
@@ -364,6 +432,23 @@ h2.onscreen {
       background-color: #41bf76;
    }
 }
+/*
+.faq2 i{
+   color: #41bf76;
+   font-size: 16px;
+   font-weight: 500;
+   right: -15%;
+   position: relative;
+   opacity: 0;
+   @include transition(all .6s);
+   @include transition-timing-function(ease-out);
+   @include transition-delay(.8s);
+}
+.faq2 i.onscreen {
+   right: 0%;
+   opacity: 1;
+}
+*/
 #footer{
    text-align: left;
    background-color: #444;
@@ -375,16 +460,29 @@ h2.onscreen {
 }
 .footLinks {
    margin-bottom: 50px;
+.four.columns{
+   right: -15%;
+   position: relative;
+   opacity: 1;
+   @include transition(all .2s);
+}
+.four.columns.onscreen {
+   right: 0%;
+   opacity: 1;
+   @include transition(all .6s);
+   @include transition-timing-function(ease-out);
+   @include transition-delay(0s);
+}
    p{
       font-size: 14px;
    }
    ul {
       li {
          line-height:1.2em;
-         font-size: 80%;
+         font-size: 83%;
          font-weight: 500;
          &:first-child {
-            font-weight: 500;
+            font-weight: 700;
             font-size: 110%;
             margin-bottom: 0px !important;
             line-height:2.9em;

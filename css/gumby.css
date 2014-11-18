@@ -1701,7 +1701,7 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 .navbar ul li { text-align: right; }
 
-a > span { position: relative; color: #444; text-decoration: none; font-weight: 500; font-family: "Roboto"; }
+a > span { position: relative; color: #444; text-decoration: none; font-family: "Roboto"; }
 
 a > span:hover { color: #444 !important; }
 
@@ -1719,8 +1719,8 @@ a > span:hover:before { visibility: visible; -webkit-transform: scaleX(1); trans
 
 nav { height: 20%; background-color: white; }
 nav .four.columns.logo { margin-top: 1.7%; }
-nav .eight.columns { margin-top: 2.5%; text-align: right; }
-nav .eight.columns a { text-align: right; }
+nav .eight.columns { margin-top: 2.5%; text-align: inherit; }
+nav .eight.columns a { text-align: inherit; font-weight: 700; }
 
 .headline { text-align: center; margin-top: 30%; color: #111; }
 .headline h1 { position: relative; font-weight: 900; top: -40px; opacity: 0; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; }
@@ -1732,11 +1732,19 @@ h2.onscreen { bottom: 0px; opacity: 1; }
 
 .test3 { text-align: left; padding-left: 0px; margin-top: 70px; z-index: -11111; }
 
-.test3 img { position: relative; right: -130px; opacity: 1; -webkit-transition: all 0.8s; -moz-transition: all 0.8s; -o-transition: all 0.8s; transition: all 0.8s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; }
+.test3 img { position: relative; right: -45%; opacity: 1; -webkit-transition: all 0.8s; -moz-transition: all 0.8s; -o-transition: all 0.8s; transition: all 0.8s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; }
 
-.test3 img.onscreen { right: 0px; opacity: 1; }
+.test3 img.onscreen { right: 0%; opacity: 1; }
 
-.test2 { position: relative; z-index: 1; min-height: 62px; }
+.mainClient { position: relative; z-index: 1; min-height: 62px; }
+
+.clientTextSlide { position: relative; left: -25%; opacity: 0; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+
+.clientTextSlide.onscreen { left: 0%; opacity: 1; -webkit-transition: all 0.8s; -moz-transition: all 0.8s; -o-transition: all 0.8s; transition: all 0.8s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; -webkit-transition-delay: 0.7s; -moz-transition-delay: 0.7s; -o-transition-delay: 0.7s; transition-delay: 0.7s; }
+
+.thirdParty { position: relative; right: -10%; opacity: 0; -webkit-transition: all 0.8s; -moz-transition: all 0.8s; -o-transition: all 0.8s; transition: all 0.8s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; -webkit-transition-delay: 1.4s; -moz-transition-delay: 1.4s; -o-transition-delay: 1.4s; transition-delay: 1.4s; }
+
+.thirdParty.onscreen { right: 0%; opacity: 1; }
 
 .mainClientWrap { margin-top: 0px; }
 
@@ -1764,6 +1772,8 @@ h2.onscreen { bottom: 0px; opacity: 1; }
 .stats .statWords { font-size: 16px; color: white; }
 
 .clientNem { padding-top: 70px; padding-bottom: 70px; }
+
+.test2 { position: relative; z-index: 1; min-height: 62px; }
 
 .purchase .ten.columns.centered { margin-top: 20px; font-weight: 300; }
 
@@ -1797,19 +1807,31 @@ h2.onscreen { bottom: 0px; opacity: 1; }
 
 .faqs { background-color: #fefef6; color: #40cd7e; }
 .faqs .four.columns { text-align: center; }
+.faqs .four.columns h3 { right: -120%; font-size: 45px; position: relative; opacity: 1; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s; transition: all 1s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; -webkit-transition-delay: 0s; -moz-transition-delay: 0s; -o-transition-delay: 0s; transition-delay: 0s; }
+.faqs .four.columns h3.onscreen { font-size: 30px; right: 0%; opacity: 1; }
 .faqs li { font-size: 16px; font-size: 1rem; }
-.faqs li i { font-size: 26px; margin-top: 3px; margin-bottom: 3px; padding: 10px; color: #444; background-color: #f6f6f6; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
-.faqs span { color: #41bf76; font-size: 16px; font-weight: 500; }
+.faqs li i { font-size: 26px; margin-top: 3px; margin-bottom: 3px; padding: 10px; color: #444; background-color: #f6f6f6; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; left: -15%; position: relative; opacity: 0; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+.faqs li i.onscreen { left: 0%; opacity: 1; -webkit-transition: all 0.6s; -moz-transition: all 0.6s; -o-transition: all 0.6s; transition: all 0.6s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; -webkit-transition-delay: 0.8s; -moz-transition-delay: 0.8s; -o-transition-delay: 0.8s; transition-delay: 0.8s; }
+.faqs span { color: #41bf76; font-size: 16px; font-weight: 500; right: -15%; position: relative; opacity: 0; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+.faqs span.onscreen { right: 0%; opacity: 1; -webkit-transition: all 0.6s; -moz-transition: all 0.6s; -o-transition: all 0.6s; transition: all 0.6s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; -webkit-transition-delay: 0.8s; -moz-transition-delay: 0.8s; -o-transition-delay: 0.8s; transition-delay: 0.8s; }
 .faqs a > span:hover { color: #41bf76 !important; }
 .faqs a > span:before { margin-bottom: -2px; background-color: #41bf76; }
 
+/*
+.faq2 i{ color: #41bf76; font-size: 16px; font-weight: 500; right: -15%; position: relative; opacity: 0; @include transition(all .6s); @include transition-timing-function(ease-out); @include transition-delay(.8s);
+}
+.faq2 i.onscreen { right: 0%; opacity: 1;
+}
+*/
 #footer { text-align: left; background-color: #444; padding-top: 30px; color: white; }
 #footer a { color: white; }
 
 .footLinks { margin-bottom: 50px; }
+.footLinks .four.columns { right: -15%; position: relative; opacity: 1; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+.footLinks .four.columns.onscreen { right: 0%; opacity: 1; -webkit-transition: all 0.6s; -moz-transition: all 0.6s; -o-transition: all 0.6s; transition: all 0.6s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; -webkit-transition-delay: 0s; -moz-transition-delay: 0s; -o-transition-delay: 0s; transition-delay: 0s; }
 .footLinks p { font-size: 14px; }
-.footLinks ul li { line-height: 1.2em; font-size: 80%; font-weight: 500; }
-.footLinks ul li:first-child { font-weight: 500; font-size: 110%; margin-bottom: 0px !important; line-height: 2.9em; }
+.footLinks ul li { line-height: 1.2em; font-size: 83%; font-weight: 500; }
+.footLinks ul li:first-child { font-weight: 700; font-size: 110%; margin-bottom: 0px !important; line-height: 2.9em; }
 
 .lowerFooter { padding-top: 8px; padding-bottom: 8px; background-color: #2f2f2f; color: #a4a4a4; }
 
