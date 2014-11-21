@@ -13,8 +13,9 @@
    background: url(../img/geometry.png) repeat;
 }
 .parallaxTop{
-   background: url(../img/topBackgroundO.jpg) no-repeat;
+   background: url(../img/tempBackground.jpg) no-repeat;
    background-size: cover;
+   min-height: 400px;
    height: 100%;
 }
 // BACKGROUND IMAGES THROUGHOUT END =========
@@ -109,7 +110,7 @@ nav{
    }
 }
 .headline{
-   text-align: center;
+   text-align: inherit;
    margin-top: 30%;
    color: #111;
    h1{
@@ -285,11 +286,12 @@ h2.onscreen {
    min-height: 230px;
 }
 .arrows{
-   padding-top: 16px;
+   padding-top: 18px;
    width: 60px;
 }
 .money{
-   width: 100px;
+   padding-top: 7px;
+   width: 90px;
 }
 .bitcoin{
    width: 65px;
@@ -713,3 +715,44 @@ h2.onscreen {
       text-align: center;
   }
 }
+
+#odometer2, #odometer3, #odometer4, #odometer5{
+   overflow: visible !important;
+   font-family: 'Roboto';
+   font-weight: 300;
+}
+
+// TOP ANIMATION START
+/* Apply to hex */
+.arrow3 {
+   animation: hex-pop-in 2.5s infinite 2.5s linear;
+   -webkit-animation: hex-pop-in 2.5s infinite 2.5s linear;
+   }
+.arrow2 {
+   animation: hex-pop-in 2.5s infinite 3s linear;
+   -webkit-animation: hex-pop-in 2.5s infinite 3s linear;
+}
+.arrow1 {
+   animation: hex-pop-in 2.5s infinite 3.5s linear;
+   -webkit-animation: hex-pop-in 2.5s infinite 3.5s linear;
+}
+
+
+@keyframes hex-pop-in {
+  0% { stroke: rgba(255,255,255,1); }
+  100% { stroke: rgba(255,255,255,0.2); }
+}
+@-moz-keyframes hex-pop-in {
+  0% { stroke: rgba(255,255,255,1); }
+  100% { stroke: rgba(255,255,255,0.2); }
+}
+@-webkit-keyframes hex-pop-in {
+  0% { stroke: rgba(255,255,255,1); }
+  100% { stroke: rgba(255,255,255,0.2); }
+}
+@-o-keyframes hex-pop-in {
+  0% { stroke: rgba(255,255,255,1); }
+  100% { stroke: rgba(255,255,255,0.2); }
+}
+
+a.anchor{display: block; position: relative; top: -200px; visibility: hidden;}
