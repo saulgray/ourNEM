@@ -1722,13 +1722,9 @@ nav .four.columns.logo { margin-top: 1.7%; }
 nav .eight.columns { margin-top: 2.5%; text-align: inherit; }
 nav .eight.columns a { text-align: inherit; font-weight: 700; }
 
-.headline { text-align: inherit; margin-top: 30%; color: #111; }
-.headline h1 { position: relative; font-weight: 900; top: -40px; opacity: 0; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; }
-.headline h2 { position: relative; font-weight: 500; bottom: -40px; opacity: 0; -webkit-transition: all 0.5s; -moz-transition: all 0.5s; -o-transition: all 0.5s; transition: all 0.5s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; -webkit-transition-delay: 1s; -moz-transition-delay: 1s; -o-transition-delay: 1s; transition-delay: 1s; }
+.headline { text-align: inherit; margin-top: 30%; }
 
-h1.onscreen { top: 0px; opacity: 1; }
-
-h2.onscreen { bottom: 0px; opacity: 1; }
+.headline svg { max-height: 490px !important; }
 
 .test3 { text-align: left; padding-left: 0px; margin-top: 70px; z-index: -11111; }
 
@@ -1770,6 +1766,12 @@ h2.onscreen { bottom: 0px; opacity: 1; }
 .stats { text-align: center; background-color: #444; padding-top: 70px; padding-bottom: 70px; }
 .stats .statNumbers { font-size: 300%; margin-bottom: 20px; color: #41bf76; font-weight: 300; }
 .stats .statWords { font-size: 16px; color: white; }
+.stats .statInfo { margin-top: 0; }
+
+.stats .statInfo { display: inline-block; float: left; padding-left: 0.96154%; padding-right: 0.96154%; width: 50%; }
+@media only screen and (min-width: 0px) { .stats .statInfo { width: 50%; } }
+@media only screen and (min-width: 768px) { .stats .statInfo { width: 50%; } }
+@media only screen and (min-width: 1040px) { .stats .statInfo { width: 25%; } }
 
 .clientNem { padding-top: 70px; padding-bottom: 70px; }
 
@@ -1809,20 +1811,14 @@ h2.onscreen { bottom: 0px; opacity: 1; }
 .faqs .four.columns { text-align: center; }
 .faqs .four.columns h3 { right: -120%; font-size: 45px; position: relative; opacity: 1; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s; transition: all 1s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; -webkit-transition-delay: 0s; -moz-transition-delay: 0s; -o-transition-delay: 0s; transition-delay: 0s; }
 .faqs .four.columns h3.onscreen { font-size: 30px; right: 0%; opacity: 1; }
-.faqs li { font-size: 16px; font-size: 1rem; }
-.faqs li i { font-size: 26px; margin-top: 3px; margin-bottom: 3px; padding: 10px; color: #444; background-color: #f6f6f6; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; left: -15%; position: relative; opacity: 0; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+.faqs li { padding-left: 5.2em; text-indent: -5.2em; font-size: 16px; font-size: 1rem; }
+.faqs li i { font-size: 26px; margin-top: 3px; margin-bottom: 3px; text-indent: 0; padding: 10px; color: #444; background-color: #f6f6f6; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; left: -15%; position: relative; opacity: 0; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
 .faqs li i.onscreen { left: 0%; opacity: 1; -webkit-transition: all 0.6s; -moz-transition: all 0.6s; -o-transition: all 0.6s; transition: all 0.6s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; -webkit-transition-delay: 0.8s; -moz-transition-delay: 0.8s; -o-transition-delay: 0.8s; transition-delay: 0.8s; }
-.faqs span { color: #41bf76; font-size: 16px; font-weight: 500; right: -15%; position: relative; opacity: 0; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
+.faqs span { color: #41bf76; font-size: 16px; font-weight: 500; right: -15%; position: relative; opacity: 0; margin-left: 6%; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
 .faqs span.onscreen { right: 0%; opacity: 1; -webkit-transition: all 0.6s; -moz-transition: all 0.6s; -o-transition: all 0.6s; transition: all 0.6s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; -webkit-transition-delay: 0.8s; -moz-transition-delay: 0.8s; -o-transition-delay: 0.8s; transition-delay: 0.8s; }
 .faqs a > span:hover { color: #41bf76 !important; }
 .faqs a > span:before { margin-bottom: -2px; background-color: #41bf76; }
 
-/*
-.faq2 i{ color: #41bf76; font-size: 16px; font-weight: 500; right: -15%; position: relative; opacity: 0; @include transition(all .6s); @include transition-timing-function(ease-out); @include transition-delay(.8s);
-}
-.faq2 i.onscreen { right: 0%; opacity: 1;
-}
-*/
 #footer { text-align: left; background-color: #444; padding-top: 30px; color: white; }
 #footer a { color: white; }
 
@@ -1868,6 +1864,11 @@ h2.onscreen { bottom: 0px; opacity: 1; }
 
 @media only screen and (max-width: 768px) { .navbar ul { background: white; padding-right: 4%; } }
 
+@media only screen and (max-width: 768px) { .headline { max-width: 60%; margin: 0 auto; margin-top: 10%; } }
+@media only screen and (max-width: 668px) { .headline { max-width: 70%; margin: 0 auto; margin-top: 10%; } }
+@media only screen and (max-width: 568px) { .headline { max-width: 80%; margin: 0 auto; margin-top: 10%; } }
+@media only screen and (max-width: 468px) { .headline { max-width: 90%; margin: 0 auto; margin-top: 10%; } }
+
 @media only screen and (max-width: 768px) { .parallax1 { min-height: 560px; } }
 
 @media only screen and (max-width: 768px) { .thirdParty { text-align: right; margin-bottom: 50px; margin-top: 20px; padding: 20px; }
@@ -1884,18 +1885,19 @@ h2.onscreen { bottom: 0px; opacity: 1; }
 
 @media only screen and (max-width: 768px) { .mainClient { width: 400px; padding: 20px; overflow: hidden; } }
 
+@media only screen and (max-width: 468px) { .mainClient { width: 400px; padding: 0px; overflow: hidden; } }
+
 @media only screen and (max-width: 668px) { .mainClient h3, .thirdParty h3 { font-size: 20px; } }
 
 @media only screen and (max-width: 988px) { .mainClient { text-align: left; margin-top: 10%; } }
 @media only screen and (max-width: 888px) { .mainClient { text-align: left; margin-top: 7%; } }
 
+@media only screen and (max-width: 768px) { .clientTextSlide { position: relative; left: -0%; opacity: 1; } }
+
+@media only screen and (max-width: 768px) { .thirdParty { position: relative; right: 0%; opacity: 1; } }
+
 @media only screen and (min-width: 768px) and (max-width: 1039px) { .mMargin { margin-top: 30px; margin-bottom: 70px; } }
 @media only screen and (max-width: 767px) { .mMargin { margin-top: 30px; margin-bottom: 70px; } }
-
-.stats .statInfo { display: inline-block; float: left; padding-left: 0.96154%; padding-right: 0.96154%; width: 50%; }
-@media only screen and (min-width: 0px) { .stats .statInfo { width: 50%; } }
-@media only screen and (min-width: 768px) { .stats .statInfo { width: 50%; } }
-@media only screen and (min-width: 1040px) { .stats .statInfo { width: 25%; } }
 
 @media only screen and (max-width: 768px) { .joined { min-height: 200px; padding-top: 30px; } }
 
@@ -1907,9 +1909,21 @@ h2.onscreen { bottom: 0px; opacity: 1; }
 
 @media only screen and (max-width: 768px) { .faqs .eight.columns .valign:before { height: 240px; margin-bottom: 40px; margin-top: 0px; padding-top: 0px; } }
 
+@media only screen and (max-width: 768px) { .faqs .four.columns h3 { position: relative; font-size: 30px; right: 0%; opacity: 1; } }
+
+@media only screen and (max-width: 768px) { .faqs span { position: relative; right: 0%; opacity: 1; } }
+
+@media only screen and (max-width: 768px) { .faqs li i { position: relative; left: 0%; opacity: 1; } }
+
+@media only screen and (max-width: 768px) { #footer li, #footer, #footer p { text-align: center !important; } }
+
+#footer .four.columns.inview { margin-top: 40px; }
+
 @media only screen and (max-width: 768px) { .lowerFooter .socialFooter { margin-bottom: 10px; margin-top: 10px; text-align: center; } }
 
 @media only screen and (max-width: 768px) { .lowerFooter .license { margin-bottom: 10px; text-align: center; } }
+
+@media only screen and (max-width: 768px) { .footLinks .four.columns { right: 0%; position: relative; opacity: 1; } }
 
 #odometer2, #odometer3, #odometer4, #odometer5 { overflow: visible !important; font-family: 'Roboto'; font-weight: 300; }
 

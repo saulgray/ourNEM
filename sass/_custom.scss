@@ -112,32 +112,9 @@ nav{
 .headline{
    text-align: inherit;
    margin-top: 30%;
-   color: #111;
-   h1{
-      position: relative;
-      font-weight: 900;
-      top: -40px;
-      opacity: 0;
-      @include transition(all .5s);
-      @include transition-timing-function(ease-out);
-   }
-   h2{
-      position: relative;
-      font-weight: 500;
-      bottom: -40px;
-      opacity: 0;
-      @include transition(all .5s);
-      @include transition-timing-function(ease-out);
-      @include transition-delay(1s);
-   }
 }
-h1.onscreen {
-   top: 0px;
-   opacity: 1;
-}
-h2.onscreen {
-   bottom: 0px;
-   opacity: 1;
+.headline svg{
+   max-height: 490px !important;
 }
 .test3{
    text-align: left;
@@ -166,7 +143,6 @@ h2.onscreen {
    left: -25%;
    opacity: 0;
    @include transition(all .3s);
-
 }
 .clientTextSlide.onscreen {
    left: 0%;
@@ -265,6 +241,12 @@ h2.onscreen {
       font-size: $norm;
       color: white;
    }
+   .statInfo{
+      margin-top: 0;
+   }
+}
+.stats .statInfo{
+   @include fancytiles(4,2,2);
 }
 .clientNem{
    padding-top: 70px;
@@ -388,11 +370,14 @@ h2.onscreen {
       }
    }
    li{
+          padding-left: 5.2em;
+    text-indent:-5.2em;
       @include font-size($norm);
       i{
          font-size: $large;
          margin-top: 3px;
          margin-bottom: 3px;
+   text-indent:0;
          padding: 10px;
          color: #444;
          background-color: #f6f6f6;
@@ -417,6 +402,7 @@ h2.onscreen {
       right: -15%;
       position: relative;
       opacity: 0;
+      margin-left: 6%;
       @include transition(all .2s);
    }
    span.onscreen {
@@ -434,23 +420,6 @@ h2.onscreen {
       background-color: #41bf76;
    }
 }
-/*
-.faq2 i{
-   color: #41bf76;
-   font-size: 16px;
-   font-weight: 500;
-   right: -15%;
-   position: relative;
-   opacity: 0;
-   @include transition(all .6s);
-   @include transition-timing-function(ease-out);
-   @include transition-delay(.8s);
-}
-.faq2 i.onscreen {
-   right: 0%;
-   opacity: 1;
-}
-*/
 #footer{
    text-align: left;
    background-color: #444;
@@ -596,6 +565,30 @@ h2.onscreen {
       padding-right: 4%;
    }
 }
+
+.headline{
+   @include respond("max-width: 768px") {
+      max-width: 60%;
+      margin: 0 auto;
+      margin-top: 10%;
+   }
+   @include respond("max-width: 668px") {
+      max-width: 70%;
+      margin: 0 auto;
+      margin-top: 10%;
+   }
+   @include respond("max-width: 568px") {
+      max-width: 80%;
+      margin: 0 auto;
+      margin-top: 10%;
+   }
+   @include respond("max-width: 468px") {
+      max-width: 90%;
+      margin: 0 auto;
+      margin-top: 10%;
+   }
+}
+
 .parallax1{
    @include respond("max-width: 768px") {
       min-height: 560px;
@@ -642,6 +635,13 @@ h2.onscreen {
       overflow: hidden;
    }
 }
+.mainClient{
+   @include respond("max-width: 468px") {
+      width: 400px;
+      padding: 0px;
+      overflow: hidden;
+   }
+}
 .mainClient h3, .thirdParty h3{
    @include respond("max-width: 668px") {
       font-size: 20px;
@@ -657,6 +657,20 @@ h2.onscreen {
       margin-top: 7%;
    }
 }
+.clientTextSlide{
+   @include respond("max-width: 768px") {
+      position: relative;
+      left: -0%;
+      opacity: 1;
+   }
+}
+.thirdParty{
+   @include respond("max-width: 768px") {
+      position: relative;
+      right: 0%;
+      opacity: 1;
+   }
+}
 .mMargin{
    @include respond(tablets) {
       margin-top: 30px;
@@ -667,9 +681,7 @@ h2.onscreen {
       margin-bottom: 70px;
    }
 }
-.stats .statInfo{
-   @include fancytiles(4,2,2);
-}
+
 .joined{
    @include respond("max-width: 768px") {
       min-height: 200px;
@@ -702,6 +714,36 @@ h2.onscreen {
       padding-top: 0px;
    }
 }
+.faqs .four.columns h3 {
+   @include respond("max-width: 768px") {
+      position: relative;
+      font-size: 30px;
+      right: 0%;
+      opacity: 1;
+   }
+}
+.faqs span{
+   @include respond("max-width: 768px") {
+   position: relative;
+   right: 0%;
+   opacity: 1;
+   }
+}
+.faqs li i{
+   @include respond("max-width: 768px") {
+   position: relative;
+   left: 0%;
+   opacity: 1;
+}
+}
+#footer li, #footer, #footer p{
+   @include respond("max-width: 768px") {
+      text-align: center !important;
+   }
+}
+#footer .four.columns.inview{
+   margin-top: 40px;
+}
 .lowerFooter .socialFooter {
    @include respond("max-width: 768px") {
       margin-bottom: 10px;
@@ -715,7 +757,13 @@ h2.onscreen {
       text-align: center;
   }
 }
-
+.footLinks .four.columns{
+   @include respond("max-width: 768px") {
+      right: 0%;
+      position: relative;
+      opacity: 1;
+   }
+}
 #odometer2, #odometer3, #odometer4, #odometer5{
    overflow: visible !important;
    font-family: 'Roboto';
