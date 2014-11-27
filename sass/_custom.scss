@@ -1,8 +1,6 @@
-// Your custom SCSS should be written here...
+@import '../bower_components/gumby-parallax/_parallax.scss';
 // BACKGROUND IMAGES THROUGHOUT START =========
-.parallax{
-   background-attachment: fixed !important;
-}
+
 .parallax1{
    background: url(../img/about-bg.jpg) no-repeat;
    background-size: cover;
@@ -40,7 +38,7 @@
    }
 }
 .navbar ul li{
-   text-align: right;
+   text-align: center;
 }
 // UNDERLINE NAVBAR HOVER STATE START ==========
 a > span {
@@ -57,7 +55,7 @@ a > span:before {
    content: "";
    position: absolute;
    width: 100%;
-   height: 2px;
+   height: 1px;
    bottom: 0;
    left: 0;
    margin-bottom: -15px;
@@ -81,6 +79,7 @@ a:before:hover{
 // UNDERLINE NAVBAR HOVER STATE END ==========
 .navbar ul li > a{
    padding-right: 0px;
+   padding-left: 0px;
    text-shadow: none;
    color: #444;
    font-weight: 500;
@@ -103,9 +102,13 @@ nav{
    .eight.columns{
       margin-top: 2.5%;
       text-align: inherit;
+      li{
+         width: 120px;
+         text-align: center;
+      }
       a{
          text-align: inherit;
-         font-weight: 700;
+         font-weight: 500;
       }
    }
 }
@@ -594,6 +597,12 @@ nav{
       min-height: 560px;
    }
 }
+.parallaxTop{
+   @include respond("max-width: 768px") {
+   background: url(../img/tempBackground.jpg) no-repeat;
+   min-height: 300px;
+}
+}
 .thirdParty{
    @include respond("max-width: 768px") {
       text-align: right;
@@ -742,7 +751,9 @@ nav{
    }
 }
 #footer .four.columns.inview{
-   margin-top: 40px;
+   @include respond("max-width: 768px") {
+      margin-top: 40px;
+   }
 }
 .lowerFooter .socialFooter {
    @include respond("max-width: 768px") {
@@ -804,3 +815,40 @@ nav{
 }
 
 a.anchor{display: block; position: relative; top: -200px; visibility: hidden;}
+
+// FAQ PAGE
+#faq .sixteen.colgrid{
+   padding-top: 200px;
+   background: url(../img/geometry.png);
+}
+#faq .eleven.columns{
+   background: white;
+   padding: 25px;
+}
+.code{
+   font-family: "Source Sans Pro";
+   font-weight: 700;
+   background: #777;
+   color: #41bf76;
+   padding: 2px 10px;
+   max-width: 400px;
+   @include border-radius(4px);
+}
+#faq ul li{
+   list-style-position: inside;
+   list-style-image: url(../img/lozenge.png) !important;
+   margin-top: 10px;
+}
+#faq h2{
+   margin-top: 30px;
+}
+#faq .five.columns{
+   margin-top: 0px;
+   ul li{
+   list-style-image: none !important;
+   padding: 10px;
+}
+}
+#faq .first{
+   margin-top: 0px;
+}
