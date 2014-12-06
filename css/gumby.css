@@ -1693,6 +1693,8 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 .parallaxTop { background: url(../img/tempBackground.jpg) no-repeat; background-size: cover; min-height: 400px; height: 100%; }
 
+.parallaxTopFAQ { background: url(../img/tempBackground.jpg) no-repeat; background-size: cover; height: 30%; }
+
 #headerSlideContainer { position: fixed; top: -55px; width: 100%; background: white; z-index: 10; }
 @media only screen and (max-width: 767px) { #headerSlideContainer { display: none !important; } }
 @media only screen and (max-width: 768px) { #headerSlideContainer { display: none !important; } }
@@ -1954,11 +1956,15 @@ nav .eight.columns a { text-align: inherit; font-weight: 500; }
 
 a.anchor { display: block; position: relative; top: -200px; visibility: hidden; }
 
-#faq .sixteen.colgrid { padding-top: 200px; background: url(../img/geometry.png); }
+#faq .headline { height: 30% !important; }
+
+.headerFAQS { text-align: center; font-weight: 700; color: #fefef6; }
+
+#faq .sixteen.colgrid { padding-top: 40px; background: url(../img/geometry.png); }
 
 #faq .eleven.columns { background: white; padding: 25px; }
 
-.code { font-family: "Source Sans Pro"; font-weight: 700; background: #777; color: #41bf76; padding: 2px 10px; max-width: 400px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -ms-border-radius: 4px; -o-border-radius: 4px; border-radius: 4px; }
+.code { font-family: "Source Sans Pro"; font-weight: 700; background: #222; color: #41bf76; padding: 2px 10px; max-width: 400px; -webkit-border-radius: 2px; -moz-border-radius: 2px; -ms-border-radius: 2px; -o-border-radius: 2px; border-radius: 2px; }
 
 #faq ul li { list-style-position: inside; list-style-image: url(../img/lozenge.png) !important; margin-top: 10px; }
 

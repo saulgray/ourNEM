@@ -16,6 +16,11 @@
    min-height: 400px;
    height: 100%;
 }
+.parallaxTopFAQ{
+   background: url(../img/tempBackground.jpg) no-repeat;
+   background-size: cover;
+   height: 30%;
+}
 // BACKGROUND IMAGES THROUGHOUT END =========
 #headerSlideContainer {
 	position: fixed;
@@ -817,8 +822,16 @@ nav{
 a.anchor{display: block; position: relative; top: -200px; visibility: hidden;}
 
 // FAQ PAGE
+#faq .headline{
+   height: 30% !important;
+}
+.headerFAQS{
+   text-align: center;
+   font-weight: 700;
+   color: #fefef6;
+}
 #faq .sixteen.colgrid{
-   padding-top: 200px;
+   padding-top: 40px;
    background: url(../img/geometry.png);
 }
 #faq .eleven.columns{
@@ -828,11 +841,11 @@ a.anchor{display: block; position: relative; top: -200px; visibility: hidden;}
 .code{
    font-family: "Source Sans Pro";
    font-weight: 700;
-   background: #777;
+   background: #222;
    color: #41bf76;
    padding: 2px 10px;
    max-width: 400px;
-   @include border-radius(4px);
+   @include border-radius(2px);
 }
 #faq ul li{
    list-style-position: inside;
