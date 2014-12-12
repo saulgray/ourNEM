@@ -1,0 +1,52 @@
+{
+    "app": {
+      "client": "NEM IS HERE!",
+      "nesting": "NEM IS DA SHIT!!!!!!",
+      "insert": "you are __youAre__",
+      "child": "__count__ child",
+      "child_plural": "__count__ children",
+      "friend_context": "A friend",
+      "friend_context_male": "A boyfriend",
+      "friend_context_female": "A girlfriend"
+   },
+   "nav":{
+      "client": "NEM CLIENT",
+      "buy": "BUY NEM",
+      "faq": "FAQ's",
+      "tech": "TECHNOLOGY",
+      "update": "UPDATES",
+      "lang": "LANGUAGE"
+   },
+   "clients":{
+      "header1": "NEM Community Client",
+      "about1": "Open the Full Featured NEM Beta Client in your web browser, a simple two step process.",
+      "click1": "INSTALL NEM COMMUNITY CLIENT",
+      "help1": "Need help with installing the NEM Client?",
+      "link1": "Follow our easy guide",
+
+      "header2": "Streamlined 3rd Party NEM Client",
+      "about2": "Open the NEM Beta Client, Features the Core NEM Features, and Easy to Install.",
+      "click2": "COMING SOON"
+   },
+   "stats":{
+      "nis": "NIS Online",
+      "acc": "accounts in use",
+      "dorm": "accounts that are dormant",
+      "avg": "NEM in accounts"
+   },
+   "buy":{
+      "header": "How to get NEM?"
+
+   },
+   "faq":{
+      "header": "Still need help?",
+      "readfaq": "Read the in depth FAQ Section",
+      "irc": "Chat live with a developer on IRC",
+      "forum": "Learn more about NEM through our large community on our forum",
+      "wiki": "Visit the wiki for in-depth details about every aspect of NEM"
+   },
+   "footer":{
+      "logotext": "Et anim adipisicing nulla laboris amet voluptate reprehenderit fugiat amet est labore ad laborum aute. Commodo nostrud Et anim adipisicing."
+
+   }
+}

@@ -44,32 +44,14 @@
       <link rel="stylesheet" href="css/gumby.css">
       <!-- <link rel="stylesheet" href="css/style.css"> -->
       <script src="bower_components/gumby/js/libs/modernizr-2.6.2.min.js"></script>
+<script src="bower_components/i18next/i18next.js"></script>
    </head>
    <body>
       <div class="top parallax parallaxTop"  gumby-parallax=".53">
-         <div id="headerSlideContainer">
-            <div id="headerSlideContent">
-               <div>
-                  <div class="row navbar" id="nav2">
-                     <h1 class="four columns logo">
-                        <a href="#">
-                        <img src="img/logoBlack2.png" width="100px" gumby-retina />
-                        </a>
-                     </h1>
-                     <ul class="eight columns">
-                        <li class="skiplink"><a href="#" gumby-goto="[data-target='nemClient']" gumby-duration="1000" gumby-offset="-160"><span>NEM CLIENT</span></a></li>
-                        <li class="skiplink"><a href="#" gumby-goto="[data-target='purchaseNem']" gumby-duration="1000" gumby-offset="-30"><span>BUY NEM</span></a></li>
-                        <li class="skiplink"><a href="#" gumby-goto="[data-target='faqs']" gumby-duration="1000" gumby-offset="-190"><span>FAQ's</span></a></li>
-                        <li class="skiplink"><a href="#" gumby-goto="[data-target='faqs']" gumby-duration="1000" gumby-offset="-190"><span>TECHNOLOGY</span></a></li>
-                        <li class="skip"><a href="#" gumby-goto="[data-target='nemClient']" gumby-duration="1000"><span>UPDATES</span></a></li>
-                        <li><a href="#"><span>LINKS</span></a></li>
-                     </ul>
-                  </div>
-               </div>
-            </div>
-         </div>
+
          <section id="mainTop">
-            <nav>
+
+            <nav gumby-fixed="250">
                <div class="row navbar" id="nav1">
                   <!-- Toggle for mobile navigation, targeting the <ul> -->
                   <a class="toggle" gumby-trigger="#nav1 > ul" href="#"><i class="icon-menu"></i></a>
@@ -79,15 +61,16 @@
                      </a>
                   </h1>
                   <ul class="eight columns">
-                     <li class="skiplink"><a href="#" gumby-goto="[data-target='nemClient']" gumby-duration="1000" gumby-offset="-160"><span>NEM CLIENT</span></a></li>
-                     <li class="skiplink"><a href="#" gumby-goto="[data-target='purchaseNem']" gumby-duration="1000" gumby-offset="-30"><span>BUY NEM</span></a></li>
-                     <li class="skiplink"><a href="#" gumby-goto="[data-target='faqs']" gumby-duration="1000" gumby-offset="-190"><span>FAQ's</span></a></li>
-                     <li><a href="specs.html"><span>TECHNOLOGY</span></a></li>
-                     <li class="skip"><a href="#" gumby-goto="[data-target='nemClient']" gumby-duration="1000"><span>UPDATES</span></a></li>
-                     <li><a href="#"><span>LINKS</span></a></li>
+                     <li class="skiplink"><a href="#" gumby-goto="[data-target='nemClient']" gumby-duration="1000" gumby-offset="-160"><span id="navclient"></span></a></li>
+                     <li class="skiplink"><a href="#" gumby-goto="[data-target='purchaseNem']" gumby-duration="1000" gumby-offset="-30"><span id="navbuy"></span></a></li>
+                     <li class="skiplink"><a href="#" gumby-goto="[data-target='faqs']" gumby-duration="1000" gumby-offset="-190"><span id="navfaq"></span></a></li>
+                     <li><a href="specs.html"><span id="navtech"></span></a></li>
+                     <li class="skip"><a href="#" gumby-goto="[data-target='nemClient']" gumby-duration="1000"><span id="navupdate"></span></a></li>
+                     <li><a href="#"><span id="navlang"></span></a></li>
                   </ul>
                </div>
             </nav>
+
 				<div class="row">
   					<section class="six columns centered">
     					<div class="headline">
@@ -214,22 +197,68 @@
       <div class="parallax parallax1" gumby-parallax=".5">
          <div class="row mainClientWrap">
             <div class="push_six six columns test2 mainClient" id="mainClient" data-target="nemClient">
+<!------------------- -->
+                   <ul class="nav">
+      <li><a href="#" data-i18n="nav.name"></a></li>
+      <li><a href="#" data-i18n="nav.page1"></a></li>
+      <li><a href="#" data-i18n="nav.page2"></a></li>
+    </ul>
+    <h3> you can switch lng via ?setLng='lngTag' </h3>
+    <a id="en" href="?setLng=en"> en-US </a>
+        | &nbsp;
+    <a id="de" href="?setLng=de-DE"> de-DE </a>
+
+    <h3>translated via $.t('app.name')</h3>
+    <span id="appclient"></span> - <span id="navclient"></span>
+    <button id="add">hello</button>
+
+    <h5>with value insert $.t('app.insert', {youAre: 'great'})</h5>
+    <span id="insert"></span>
+
+    <h5>with plural $.t('app.insert', {youAre: 'great'})</h5>
+    <span id="singular"></span> - <span id="plural"></span>
+
+    <h5>nesting</h5>
+    <span id="nesting"></span>
+
+    <h5>with translation context $.t('friend_context', {context: 'male || female'})</h5>
+    <span id="male"></span> - <span id="female"></span>
+
+
+    <h3>loaded via attribute 'data-i18n' and $('.nav').i18n();</h3>
+
+    <h5>basic text</h5>
+    <ul class="nav">
+        <li class="active"><a href="#" data-i18n="nav.home"></a></li>
+        <li><a href="#" data-i18n="nav.1"></a></li>
+        <li><a href="#" data-i18n="nav.2"></a></li>
+    </ul>
+
+    <button id="btn" data-i18n="ns.common:add"></button>
+
+    <h5>extended usage of 'data-i18n' - apply to other attributes</h5>
+    <div id="extendedAttr">
+        <input data-i18n="[placeholder]ns.common:attr.placeholder;" type="text"></input>
+        <button data-i18n="[title]ns.common:attr.title;btn.hoverMe;"></button>
+    </div>
+<!------------------ -->
+
+
+
                <span class="modContent">
                   <span class="hideDesktop">
                   <img src="img/laptopNEM.png"/>
                   </span>
                   <div class="clientTextSlide inview" gumby-classname="onscreen" gumby-offset="250">
                      <a class="anchor" id="top"></a>
-                  <h3 class="goto">NEM Community Client</h3>
-                  <p class="descrip">Open the Full Featured NEM Beta Client in your web browser, a simple two step process.</p>
-
+                  <h3 class="goto" id="clientsheader1"></h3>
+                  <p class="descrip" id="clientsabout1"></p>
                      <p>
-                        <a href="http://bob.nem.ninja/webstart/nem-monitor.jnlp" class="btn btn-1 btn-1e button">INSTALL NEM COMMUNITY CLIENT</a>
+                        <a href="http://bob.nem.ninja/webstart/nem-monitor.jnlp" class="btn btn-1 btn-1e button" id="clientsclick1"></a>
                      </p>
-                     <p class="needHelp">Need help with installing the NEM Client? <a href="#"><span>Follow our easy guide</span></a></p>
+                     <p class="needHelp" id="clientshelp1"><a href="#"><span id="">Follow our easy guide</span></a></p>
                   </div>
                </span>
-               <!-- Look I'm first in the markup, but second on the screen! -->
             </div>
             <div class="pull_four eight columns test3">
                <img class="inview" gumby-classname="onscreen" gumby-offset="250" src="img/laptopNEM.png"/>
@@ -237,11 +266,9 @@
          </div>
          <div class="row">
             <div class="six columns thirdParty inview" gumby-classname="onscreen" gumby-offset="50">
-               <h3>
-                  Streamlined 3rd Party NEM Client
-               </h3>
-               <p>Open the NEM Beta Client, Features the Core NEM Features, and Easy to Install.</p>
-               <p><a href="#" class="comingS">COMING SOON</a></p>
+               <h3 id="clientsheader2"></h3>
+               <p id="clientsabout2"></p>
+               <p><a href="#" class="comingS" id="clientsclick2"></a></p>
             </div>
          </div>
       </div>
@@ -251,40 +278,32 @@
                <div class="statNumbers">
                   <div id="odometer5" class="odometer">178</div>
                </div>
-               <div class="statWords">
-                  NIS Online
-               </div>
+               <div class="statWords" id="statsnis"></div>
             </div>
             <div class="statInfo mMargin">
                <div class="statNumbers">
                   <div id="odometer3" class="odometer">123</div>
                </div>
-               <div class="statWords">
-                  accounts in use
-               </div>
+               <div class="statWords" id="statsacc"></div>
             </div>
             <div class="statInfo">
                <div class="statNumbers">
                   <div id="odometer4" class="odometer">45</div>
                </div>
-               <div class="statWords">
-                  accounts that are dormant
-               </div>
+               <div class="statWords" id="statsdorm"></div>
             </div>
             <div class="statInfo">
                <div class="statNumbers">
                   <div id="odometer2" class="odometer">1223</div>
                </div>
-               <div class="statWords">
-                  average NEM in accounts
-               </div>
+               <div class="statWords" id="statsavg"></div>
             </div>
          </div>
       </div>
       <div class="parallax parallax2" gumby-parallax=".7">
          <div class="overflowHide">
             <div class="heading3" data-target="purchaseNem">
-               <h2>How to get NEM?</h2>
+               <h2 id="buyheader"></h2>
             </div>
             <div class="row purchase">
                <div class="four columns border">
@@ -371,7 +390,7 @@
             <div class="four columns">
                <article class="valign row">
                   <div>
-                     <h3 class="inview" gumby-classname="onscreen" gumby-offset="180">Still need help?</h3>
+                     <h3 class="inview" gumby-classname="onscreen" gumby-offset="180" id="faqheader"></h3>
                   </div>
                </article>
             </div>
@@ -380,18 +399,16 @@
                   <div>
                      <ul>
                         <li>
-
-                           <i class="icon-help-circled inview" gumby-classname="onscreen" gumby-offset="250"></i><a href="faq.html"><span class="inview" gumby-classname="onscreen" gumby-offset="250">Read the in depth FAQ Section</span></a>
-
+                           <i class="icon-help-circled inview" gumby-classname="onscreen" gumby-offset="250"></i><a href="faq.html"><span class="inview" gumby-classname="onscreen" gumby-offset="250" id="faqreadfaq"></span></a>
                         </li>
                         <li class="faq2">
-                           <i class="icon-chat inview" gumby-classname="onscreen" gumby-offset="250"></i><a href="http://webchat.freenode.net/?channels=ournem"><span class="inview" gumby-classname="onscreen" gumby-offset="250">Chat live with a developer on IRC</span></a>
+                           <i class="icon-chat inview" gumby-classname="onscreen" gumby-offset="250"></i><a href="http://webchat.freenode.net/?channels=ournem"><span class="inview" gumby-classname="onscreen" id="faqirc" gumby-offset="250"></span></a>
                         </li>
                         <li class="faq3">
-                           <i class="icon-users inview" gumby-classname="onscreen" gumby-offset="250"></i><a href="https://forum.nemcoin.com/index.php"><span class="inview" gumby-classname="onscreen" gumby-offset="250">Learn more about NEM through our large community on our forum</span></a>
+                           <i class="icon-users inview" gumby-classname="onscreen" gumby-offset="250"></i><a href="https://forum.nemcoin.com/index.php"><span class="inview" gumby-classname="onscreen" gumby-offset="250" id="faqforum"></span></a>
                         </li>
                         <li class="faq4">
-                           <i class="icon-keyboard inview" gumby-classname="onscreen" gumby-offset="250"></i><a href="http://wiki.nemcoin.com/index.php"><span class="inview" gumby-classname="onscreen" gumby-offset="250">Visit the wiki for in-depth details about every aspect of NEM</span></a>
+                           <i class="icon-keyboard inview" gumby-classname="onscreen" gumby-offset="250"></i><a href="http://wiki.nemcoin.com/index.php"><span class="inview" gumby-classname="onscreen" gumby-offset="250" id="faqwiki"></span></a>
                         </li>
                      </ul>
                   </div>
@@ -403,8 +420,8 @@
          <footer class="row footLinks" gumby-shuffle="only screen and (max-width: 767px)|1-0">
             <div class=" four columns inview" gumby-classname="onscreen" gumby-offset="150" >
                <img src="img/logoWhite2.png"/>
-               <p>
-                  Et anim adipisicing nulla laboris amet voluptate reprehenderit fugiat amet est labore ad laborum aute. Commodo nostrud Et anim adipisicing.
+               <p id="footerlogotext">
+
                </p>
             </div>
             <div class="push_two six columns">
@@ -515,5 +532,11 @@
       <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
       <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
       <![endif]-->
+      	<script>
+
+
+
+
+	</script>
    </body>
 </html>

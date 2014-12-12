@@ -14,6 +14,7 @@
             "bower_components/gumby-parallax/gumby.parallax.js",
             "bower_components/gumby-inview/gumby.inview.js",
             "bower_components/gumby-images/gumby.images.js",
-				"bower_components/gumby-shuffle/gumby.shuffle.js"
+				"bower_components/gumby-shuffle/gumby.shuffle.js",
+				"bower_components/i18next/i18next.js"
         ]
 }

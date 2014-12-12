@@ -22,49 +22,26 @@
    height: 30%;
 }
 // BACKGROUND IMAGES THROUGHOUT END =========
-#headerSlideContainer {
-	position: fixed;
-	top:-55px;
-	width: 100%;
-	background: white;
-   z-index: 10;
-   @include hidden(all-phones);
-   @include hidden(portrait-tablets);
-}
-#headerSlideContent {
-	height: 55px;
-   a > span:before {
-      margin-bottom: -2px;
-   }
-}
-#nav2{
-   .four.columns.logo{
-      margin-top: -10px;
-   }
-}
-.navbar ul li{
-   text-align: center;
-}
+
 // UNDERLINE NAVBAR HOVER STATE START ==========
 a > span {
    position: relative;
    color: #444;
    text-decoration: none;
-
    font-family: 'Roboto'
 }
 a > span:hover {
-   color: #444 !important;
+   color: #41bf76 !important;
 }
 a > span:before {
    content: "";
    position: absolute;
    width: 100%;
-   height: 1px;
+   height: 2px;
    bottom: 0;
    left: 0;
    margin-bottom: -15px;
-   background-color: black;
+   background-color: #41bf76;
    visibility: hidden;
    -webkit-transform: scaleX(0);
    transform: scaleX(0);
@@ -72,7 +49,7 @@ a > span:before {
    transition: all 0.3s ease-in-out 0s;
 }
 .mainPast ul a > span:before{
-   background-color: black;
+   background-color: #41bf76;
 }
 a > span:hover:before {
    visibility: visible;
@@ -97,8 +74,8 @@ a:before:hover{
 .gumby-no-touch .navbar ul li:hover > a, .gumby-touch .navbar ul li.active > a, .navbar, .skiplink{
    background: transparent;
 }
-
 nav{
+   width: 100%;
    height: 20%;
    background-color: white;
    .four.columns.logo{
@@ -115,8 +92,38 @@ nav{
          text-align: inherit;
          font-weight: 500;
       }
+      span:hover{
+         color: #41bf76 !important;
+         font-weight: 700;
+      }
    }
 }
+
+
+nav.fixed{
+   width: 100%;
+   background: white;
+   z-index: 10;
+   @include hidden(all-phones);
+   @include hidden(portrait-tablets);
+   height: 65px;
+   .four.columns.logo{
+      margin-top: -5px;
+   }
+   .eight.columns{
+      margin-top: 5px;
+   }
+   img{
+      width: 100px;
+   }
+   a > span:before {
+      margin-bottom: -2px;
+   }
+}
+.navbar ul li{
+
+}
+
 .headline{
    text-align: inherit;
    margin-top: 30%;

@@ -1695,24 +1695,13 @@ table.rounded thead th, table.rounded thead td, table.rounded caption + tbody tr
 
 .parallaxTopFAQ { background: url(../img/tempBackground.jpg) no-repeat; background-size: cover; height: 30%; }
 
-#headerSlideContainer { position: fixed; top: -55px; width: 100%; background: white; z-index: 10; }
-@media only screen and (max-width: 767px) { #headerSlideContainer { display: none !important; } }
-@media only screen and (max-width: 768px) { #headerSlideContainer { display: none !important; } }
-
-#headerSlideContent { height: 55px; }
-#headerSlideContent a > span:before { margin-bottom: -2px; }
-
-#nav2 .four.columns.logo { margin-top: -10px; }
-
-.navbar ul li { text-align: center; }
-
 a > span { position: relative; color: #444; text-decoration: none; font-family: "Roboto"; }
 
-a > span:hover { color: #444 !important; }
+a > span:hover { color: #41bf76 !important; }
 
-a > span:before { content: ""; position: absolute; width: 100%; height: 1px; bottom: 0; left: 0; margin-bottom: -15px; background-color: black; visibility: hidden; -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transition: all 0.3s ease-in-out 0s; transition: all 0.3s ease-in-out 0s; }
+a > span:before { content: ""; position: absolute; width: 100%; height: 2px; bottom: 0; left: 0; margin-bottom: -15px; background-color: #41bf76; visibility: hidden; -webkit-transform: scaleX(0); transform: scaleX(0); -webkit-transition: all 0.3s ease-in-out 0s; transition: all 0.3s ease-in-out 0s; }
 
-.mainPast ul a > span:before { background-color: black; }
+.mainPast ul a > span:before { background-color: #41bf76; }
 
 a > span:hover:before { visibility: visible; -webkit-transform: scaleX(1); transform: scaleX(1); }
 
@@ -1722,11 +1711,20 @@ a > span:hover:before { visibility: visible; -webkit-transform: scaleX(1); trans
 
 .gumby-no-touch .navbar ul li:hover > a, .gumby-touch .navbar ul li.active > a, .navbar, .skiplink { background: transparent; }
 
-nav { height: 20%; background-color: white; }
+nav { width: 100%; height: 20%; background-color: white; }
 nav .four.columns.logo { margin-top: 1.7%; }
 nav .eight.columns { margin-top: 2.5%; text-align: inherit; }
 nav .eight.columns li { width: 120px; text-align: center; }
 nav .eight.columns a { text-align: inherit; font-weight: 500; }
+nav .eight.columns span:hover { color: #41bf76 !important; font-weight: 700; }
+
+nav.fixed { width: 100%; background: white; z-index: 10; height: 65px; }
+@media only screen and (max-width: 767px) { nav.fixed { display: none !important; } }
+@media only screen and (max-width: 768px) { nav.fixed { display: none !important; } }
+nav.fixed .four.columns.logo { margin-top: -5px; }
+nav.fixed .eight.columns { margin-top: 5px; }
+nav.fixed img { width: 100px; }
+nav.fixed a > span:before { margin-bottom: -2px; }
 
 .headline { text-align: inherit; margin-top: 30%; }
 
