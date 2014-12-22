@@ -1,19 +1,20 @@
 {
     "app": {
+      "now": "GET NEM HERE",
+      "coming": "COMING SOON",
+
+
       "client": "NEM IS HERE!",
       "nesting": "NEM IS DA SHIT!!!!!!",
       "insert": "you are __youAre__",
       "child": "__count__ child",
-      "child_plural": "__count__ children",
-      "friend_context": "A friend",
-      "friend_context_male": "A boyfriend",
-      "friend_context_female": "A girlfriend"
+      "child_plural": "__count__ children"
    },
    "nav":{
       "client": "NEM CLIENT",
       "buy": "BUY NEM",
       "faq": "FAQ's",
-      "tech": "TECHNOLOGY",
+      "tech": "DEVELOPERS",
       "update": "UPDATES",
       "lang": "LANGUAGE"
    },
@@ -35,7 +36,13 @@
       "avg": "NEM in accounts"
    },
    "buy":{
-      "header": "How to get NEM?"
+      "header": "How to get NEM?",
+      "box1": "Get your share of NEM while it is still in Alpha",
+      "box1click": "$t(app.now)",
+      "box2": "NEM will be available at POLONIEX shortly after launch",
+      "box2click": "$t(app.coming)",
+      "box3": "Buy NEM directly with cash",
+      "box3click": "$t(app.coming)"
 
    },
    "faq":{
@@ -46,7 +53,33 @@
       "wiki": "Visit the wiki for in-depth details about every aspect of NEM"
    },
    "footer":{
-      "logotext": "Et anim adipisicing nulla laboris amet voluptate reprehenderit fugiat amet est labore ad laborum aute. Commodo nostrud Et anim adipisicing."
+      "logotext": "Et anim adipisicing nulla laboris amet voluptate reprehenderit fugiat amet est labore ad laborum aute. Commodo nostrud Et anim adipisicing.",
 
+      "resources": "Resources",
+      "resources1": "NEM Github",
+      "resources2": "Bitcointalk Thread",
+      "resources3": "Final Stakeholder List",
+      "resources4": "NEM Intro Handout",
+      "resources5": "NEM News",
+      "resources6": "NEM Crowdsale",
+
+      "articles": "Articles",
+      "articles1": "NEM on Vice",
+      "articles2": "NEM Yahoo Finance",
+      "articles3": "NEM Cointelegraph",
+      "articles4": "",
+      "articles5": "",
+      "articles6": "",
+
+      "newsletters": "Newsletter",
+      "newsletters1": "Newsletter __latest__",
+      "newsletters2": "Newsletter __latest__",
+      "newsletters3": "Newsletter __latest__",
+      "newsletters4": "Newsletter __latest__",
+      "newsletters5": "Newsletter __latest__",
+      "newsletters6": "Archives",
+      "latest": "1"
    }
+
+
 }

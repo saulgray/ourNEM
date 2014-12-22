@@ -1,6 +1,11 @@
 @import '../bower_components/gumby-parallax/_parallax.scss';
 // BACKGROUND IMAGES THROUGHOUT START =========
-
+// GUMBY OVERRIDES START
+.row{
+   padding-left: 0px;
+   padding-right: 0px;
+}
+// GUMBY OVERRIDES END
 .parallax1{
    background: url(../img/about-bg.jpg) no-repeat;
    background-size: cover;
@@ -30,7 +35,7 @@ a > span {
    text-decoration: none;
    font-family: 'Roboto'
 }
-a > span:hover {
+a > span:hover, a > i:hover {
    color: #41bf76 !important;
 }
 a > span:before {
@@ -48,7 +53,7 @@ a > span:before {
    -webkit-transition: all 0.3s ease-in-out 0s;
    transition: all 0.3s ease-in-out 0s;
 }
-.mainPast ul a > span:before{
+.mainPast ul a > span:before, .mainPast ul a > i:before{
    background-color: #41bf76;
 }
 a > span:hover:before {
@@ -74,6 +79,15 @@ a:before:hover{
 .gumby-no-touch .navbar ul li:hover > a, .gumby-touch .navbar ul li.active > a, .navbar, .skiplink{
    background: transparent;
 }
+.gumby-no-touch .navbar ul li:hover .dropdown{
+border-top: none;
+}
+.gumby-no-touch .navbar .dropdown ul:hover{
+
+}
+.gumby-no-touch .navbar li .dropdown ul li a:hover{
+   background: transparent !important;
+}
 nav{
    width: 100%;
    height: 20%;
@@ -84,6 +98,16 @@ nav{
    .eight.columns{
       margin-top: 2.5%;
       text-align: inherit;
+      .dropdown{
+         border-top: none;
+         a > span:before {
+            margin-bottom: -2px;
+         }
+         /*
+         padding-top: 20px;
+         margin-top: 20px;
+         */
+      }
       li{
          width: 120px;
          text-align: center;
@@ -112,6 +136,9 @@ nav.fixed{
    }
    .eight.columns{
       margin-top: 5px;
+      .dropdown{
+         margin-top: 0px;
+      }
    }
    img{
       width: 100px;
@@ -120,7 +147,7 @@ nav.fixed{
       margin-bottom: -2px;
    }
 }
-.navbar ul li{
+.navbar{
 
 }
 
@@ -260,7 +287,7 @@ nav.fixed{
       margin-top: 0;
    }
 }
-.stats .statInfo{
+.statInfo{
    @include fancytiles(4,2,2);
 }
 .clientNem{
@@ -311,6 +338,24 @@ nav.fixed{
    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
    width: 160px;
    @include border-radius(3px);
+}
+.otherXchange{
+   /*
+   margin-left: 5%;
+   margin-right: 5%;
+   */
+}
+.border.otherXchange{
+   min-height: 30px;
+   padding: 1% 0% .5% 0%;
+   margin-top: 20px;
+   background-color: white;
+   .inside{
+      @include fancytiles(4,4,2);
+   }
+   img{
+      max-height: 20px;
+   }
 }
 .buyGuide{
    margin-top: 50px;
@@ -845,19 +890,15 @@ a.anchor{display: block; position: relative; top: -200px; visibility: hidden;}
    background: white;
    padding: 25px;
 }
-.code{
-   font-family: "Source Sans Pro";
-   font-weight: 700;
-   background: #222;
-   color: #41bf76;
-   padding: 2px 10px;
-   max-width: 400px;
-   @include border-radius(2px);
-}
+
 #faq ul li{
    list-style-position: inside;
    list-style-image: url(../img/lozenge.png) !important;
    margin-top: 10px;
+}
+#faq ol li{
+   list-style-position: outside;
+   margin-top: 20px;
 }
 #faq h2{
    margin-top: 30px;
@@ -869,6 +910,86 @@ a.anchor{display: block; position: relative; top: -200px; visibility: hidden;}
    padding: 10px;
 }
 }
+#faq nav#sidebar-nav-holder.fixed{
+   margin-top: 85px;
+}
 #faq .first{
    margin-top: 0px;
+}
+
+// FAUX CODE START
+.code{
+   font-family: monospace;
+   font-weight: 500;
+   background: #000;
+   color: #0f0;
+   padding: 2px 10px;
+   max-width: 400px;
+   @include border-radius(2px);
+}
+.terminal {
+  position: relative;
+  outline: none;
+  &:before {
+    content: '~$ ';
+  }
+  &:last-of-type {
+  &:after {
+    content: " ";
+    display: inline-block;
+    transform: translateY(2px) translateX(1px);
+    width: 7px;
+    height: 16px;
+    background-color: #0f0;
+    -webkit-animation: blink 1s infinite;
+    animation: blink 1s infinite;
+  }
+  }
+}
+.terminalWrap {
+  font-family: monospace;
+  padding: 15px;
+  background-color: #000;
+  max-width: 600px;
+  color: #0f0;
+  @include border-radius(5px);
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+// FAUX CODE END
+.centerImage{
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+  @include box-shadow(#555 2px 2px 4px);
+}
+.floatRight{
+   float: right;
+   margin-left: 15px;
+   @include box-shadow(#555 2px 2px 4px);
+}
+.floatLeft{
+   float: left;
+   @include box-shadow(#555 2px 2px 4px);
 }

@@ -32,6 +32,13 @@
 		$('#statsavg').text($.t('stats.avg'));
 
 		$('#buyheader').text($.t('buy.header'));
+		$('#buybox1').text($.t('buy.box1'));
+		$('#buybox1click').text($.t('buy.box1click'));
+		$('#buybox2').text($.t('buy.box2'));
+		$('#buybox2click').text($.t('buy.box2click'));
+		$('#buybox3').text($.t('buy.box3'));
+		$('#buybox3click').text($.t('buy.box3click'));
+
 
 		$('#faqheader').text($.t('faq.header'));
 		$('#faqreadfaq').text($.t('faq.readfaq'));
@@ -41,8 +48,36 @@
 
 		$('#footerlogotext').text($.t('footer.logotext'));
 
+		$('#footerresources').text($.t('footer.resources'));
+		$('#footerresources1').text($.t('footer.resources1'));
+		$('#footerresources2').text($.t('footer.resources2'));
+		$('#footerresources3').text($.t('footer.resources3'));
+		$('#footerresources4').text($.t('footer.resources4'));
+		$('#footerresources5').text($.t('footer.resources5'));
+		$('#footerresources6').text($.t('footer.resources6'));
+
+		$('#footerarticles').text($.t('footer.articles'));
+		$('#footerarticles1').text($.t('footer.articles1'));
+		$('#footerarticles2').text($.t('footer.articles2'));
+		$('#footerarticles3').text($.t('footer.articles3'));
+		$('#footerarticles4').text($.t('footer.articles4'));
+		$('#footerarticles5').text($.t('footer.articles5'));
+		$('#footerarticles6').text($.t('footer.articles6'));
+
+		$('#footernewsletters').text($.t('footer.newsletters'));
+		$('#footernewsletters1').text($.t('footer.newsletters1'));
+		$('#footernewsletters2').text($.t('footer.newsletters2'));
+		$('#footernewsletters3').text($.t('footer.newsletters3'));
+		$('#footernewsletters4').text($.t('footer.newsletters4'));
+		$('#footernewsletters5').text($.t('footer.newsletters5'));
+		$('#footernewsletters6').text($.t('footer.newsletters6'));
 
 
+
+
+
+
+$("#innerHtml").i18n();
 		$('#insert').text($.t('app.insert', {youAre: 'great'}))
 		$('#singular').text($.t('app.child', {count: 1}))
 		$('#plural').text($.t('app.child', {count: 3}))

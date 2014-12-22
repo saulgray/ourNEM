@@ -58,12 +58,30 @@
          </a>
       </h1>
       <ul class="eight columns">
-         <li class="skiplink"><a href="#" gumby-goto="[data-target='nemClient']" gumby-duration="1000" gumby-offset="-160"><span>NEM CLIENT</span></a></li>
-         <li class="skiplink"><a href="#" gumby-goto="[data-target='purchaseNem']" gumby-duration="1000" gumby-offset="-30"><span>BUY NEM</span></a></li>
-         <li class="skiplink"><a href="#" gumby-goto="[data-target='faqs']" gumby-duration="1000" gumby-offset="-190"><span>FAQ's</span></a></li>
-         <li><a href="specs.html"><span>TECHNOLOGY</span></a></li>
-         <li class="skip"><a href="#" gumby-goto="[data-target='nemClient']" gumby-duration="1000"><span>UPDATES</span></a></li>
-         <li><a href="#"><span>LINKS</span></a></li>
+         <li class="skiplink"><a href="#" gumby-goto="[data-target='nemClient']" gumby-duration="1000" gumby-offset="-160"><span id="navclient"></span></a></li>
+         <li class="skiplink"><a href="#" gumby-goto="[data-target='purchaseNem']" gumby-duration="1000" gumby-offset="-30"><span id="navbuy"></span></a></li>
+         <li class="skiplink"><a href="#" gumby-goto="[data-target='faqs']" gumby-duration="1000" gumby-offset="-190"><span id="navfaq"></span></a></li>
+         <li><a href=""><span id="navtech"></span><i class="icon-down-open-big"></i></a>
+         <div class="dropdown">
+         <ul>
+            <li><a href="https://github.com/NewEconomyMovement/NemCommunityClient/blob/master/docs/api.md"><span id="navtech">NCC API</span></a></li>
+            <li><a href="https://drive.google.com/file/d/0B_te3HSCdxPVZVQ5OGt1anVaVlE/view"><span id="navtech">NIS API</span></a></li>
+         </ul>
+         </div>
+         </li>
+         <li class="skip"><a href="#" gumby-goto="[data-target='nemClient']" gumby-duration="1000"><span id="navupdate"></span></a></li>
+         <li>
+            <a href="#"><span id="navlang"></span><i class="icon-down-open-big"></i></a>
+               <div class="dropdown">
+                 <ul>
+                   <li><a id="en" href="?setLng=en"><span>English en-US</span></a></li>
+
+                   <li><a id="de" href="?setLng=de-DE"><span>English en-US TEST</span></a></li>
+                   <li><a href="#"><span id="navtech">TEXT</span></a></li>
+                   <li><a href="#"><span id="navtech">TEXT</span></a></li>
+                 </ul>
+               </div>
+         </li>
       </ul>
    </div>
 </nav>
@@ -81,8 +99,8 @@
 <div class="sixteen colgrid">
     <div class="row">
                 <section class="five columns">
-          <nav id="sidebar-nav-holder" gumby-fixed="top" gumby-pin="[data-target='intrinsic-ratio-video']">
-            <ul id="sidebar-nav" class="border ">
+          <nav id="sidebar-nav-holder" gumby-fixed="240">
+            <ul id="sidebar-nav" class="border">
 
                 <li>
                   <a href="#whats-nem" class="skip" gumby-update gumby-duration="600" gumby-goto="[data-target='whats-nem']"><span>What's NEM</span></a>
@@ -270,82 +288,90 @@ How to install Java 8 in Ubuntu/Mint
 <iframe width="420" height="315" src="//www.youtube.com/embed/EpxDsVti4aY" frameborder="0" allowfullscreen></iframe>
 </article>
 It is essentially these commands, if you don't want to watch the video:
-<p class="code">
-sudo apt-get purge openjdk*<br/>
-sudo add-apt-repository ppa:webupd8team/java<br/>
-sudo apt-get update<br/>
-sudo apt-get install oracle-java8-installer<br/>
-sudo apt-get install oracle-java8-set-default<br/>
-</p>
+<div class="terminalWrap">
+<div class="terminal">sudo apt-get purge openjdk*</div>
+<div class="terminal">sudo add-apt-repository ppa:webupd8team/java</div>
+<div class="terminal">sudo apt-get update</div>
+<div class="terminal">sudo apt-get install oracle-java8-installer</div>
+<div class="terminal">sudo apt-get install oracle-java8-set-default</div>
+
+</div>
+
+
           </div>
-          <!--
+
 <div class="left-center" data-target="install-java">
    <h2>Installing NEM Client</h2>
-
-             The developers have made installing NEM Client a rather easy process, just <a href="http://bob.nem.ninja/webstart/nem-monitor.jnlp">GO TO THIS LINK</a>, and accept the download, on Chrome it will ask you to save the file, save the file wherever it is convenient for you.
-             nem monitor does all the heavy lifting for you, it installs NIS and NCC, and after about 3-5 minutes, you are ready to log in. During the installatio process, you will notice a NEM Icon in your toolbar, once it is ready, it will look like this: <img src="img/2-3.png"/>
-             Your browser should have opened automatically to <a href="http://127.0.0.1:8989/ncc/web/index.html">http://127.0.0.1:8989/ncc/web/index.html</a>, if it hasn't, simply go there now. You will be asked to create an account or login to anexisting account, most likely if you are reading this, you will be creating a new account. It is very important that the password you use is secure. I recomend generating and storing your passwords with a <a href="https://en.wikipedia.org/wiki/Password_manager">password manager</a>. The password must be enough bits to prevent a brute force attack, but it also must be remembered. Losing your password is not an option, there is no way to recover an account if the password is lost. <a href="http://keepass.info/download.html">Keepass</a> <a href="http://www.keepassx.org/downloads/">Keepassx</a> are both good password managers, and there are many more options as well.
-
+<ul>
+   <li>
+   <img class="floatRight" width="250px" src="img/nem-monitor.png"/>
+             The developers have made installing NEM Client a rather easy process, just <a href="http://bob.nem.ninja/webstart/nem-monitor.jnlp">Get the NEM Monitor</a>, and accept the download, on Chrome it will ask you to save the file, save the file wherever it is convenient for you.
+          </li>
+          <li>
+         nem monitor does all the heavy lifting for you, it installs NIS and NCC, and after about 3-5 minutes, you are ready to log in. During the installatio process, you will notice a NEM Icon in your toolbar, once it is ready, it will look like this: <img src="img/2-3.png"/>
+      </li>
+      <li>
+             Your browser should have opened automatically to <a href="http://127.0.0.1:8989/ncc/web/index.html">http://127.0.0.1:8989/ncc/web/index.html</a>, if it hasn't, simply go there now. You will be asked to create an account or login to anexisting account, most likely if you are reading this, you will be creating a new account.
+          </li>
+          <li>
+   It is very important that the password you use is secure. I recomend generating and storing your passwords with a <a href="https://en.wikipedia.org/wiki/Password_manager">password manager</a>. The password must be enough bits to prevent a brute force attack, but it also must be remembered. Losing your password is not an option, there is no way to recover an account if the password is lost. <a href="http://keepass.info/download.html">Keepass</a> <a href="http://www.keepassx.org/downloads/">Keepassx</a> are both good password managers, and there are many more options as well.
+</li>
+</ul>
 
           </div>
 
-  <div class="content">
-    <a class="close switch" gumby-trigger="|#modalBuy"><i class="icon-cancel" /></i></a>
-    <div class="row">
-      <div class="ten columns centered text-center">
+
         <h2>How to Purchase NEM</h2>
         <p>In order to purchase NEM, you currently need to purchase Bitcoin first. In the future NEM will be able to directly be bought with fiat, but for now, you must use Bitcoin (or another cryptocurrency. Below I will lay out how to purchase Bitcoin, if you already have Bitcoin, skip to <a href="#">STEP 6</a></p>
+
         <h3>Buying Bitcoin</h3>
-        <p>As the saying goes, there are many ways to skin a cat, every day new options for buying Bitcoin become available. In the past I would have used coinbase, however, today I will use circle.
-             <img src="img/circle2.png"/>
+        <p>Every day new options for buying Bitcoin become available. In the past I would have used coinbase, however, today I will use circle.
+             <img class="centerImage" src="img/circle2.png"/>
              </p>
-             </div>
-             </div>
-               <div class="row">
-             <div class="twelve columns">
+
         <ol>
         <li>
 
         First, go to circle.com, and fill in your name, email address and password.
 </li>
         <li>
+           <img class="floatRight" width="250px" src="img/circleConfirm.png"/>
         You will then receive a confirmation email, simply confirm the email address by clicking on the link
 </li>
         <li>
         You will then be prompted to enter your phone number, this enables extra security for your account, taken from Circle "This makes your account more secure by combining something you know (your password) with something you have (your phone) when you authenticate. When you take certain actions, we send a code to your phone to verify that it's you taking the action."
 </li>
-        <li>
+        <li><img width="200px" class="floatRight" src="img/circle1.png"/>
         You are almost done, now it's time to enter the method of payment you plan to use. Using a credit card results in an instant transfer of Bitcoin to your account, but some company's charge a fee (I was charged a 2.9% fee, but your expereience could vary). You can also link a bank account, and pay 0 fees, but that will take a few days to be verified.
 </li>
 <li>
-<img class="a circle" src="img/circle1.png"/>
+
 Now it is time to make the purchase, on the home page, click <a href="https://www.circle.com/deposit">Add Funds</a>. You will see a page similar to the image below. Simply choose one of the funding sources you added in the previous step, and enter the amount of USD or other fiat you want to convert into Bitcoin.
 To learn more about how to use circle, check out their <a href="https://support.circle.com/hc/en-us/articles/201207324">Tips</a> page.
+<img class="centerImage" width="200px" src="img/circle3.png"/>
 </li>
-<li> Congratulations, you now have Bitcoin!<img class="b" src="img/circle3.png"/> To purchase NEM, you will need to use an exchange such as Poloniex. Creating an account there is nearly identical to circle, however it should be faster as you will not be prompted to add features such as 2 factor authentication (although I highly reccomend enabling 2FA, there is a link under your username)<img class="a" src="img/polo1.png"/>
+<h3>Buying NEM</h3>
+<li>Congratulations, you now have Bitcoin! To purchase NEM, you will need to use an exchange such as Poloniex.  Creating an account there is nearly identical to circle, <img class="floatRight" src="img/polo1.png"/>however it should be faster as you will not be prompted to add features such as 2 factor authentication (although I highly reccomend enabling 2FA, there is a link under your username)
 </li>
-<li>
+<li><img class="floatRight" src="img/polo2.png"/>
 Once logged into your Poloniex account, click on the "Balances" tab, and scroll down to [BTC] Bitcoin, and click on "Generate New BTC Address".
-<img class="b" src="img/polo2.png"/>Take a note of this address, you will need it for your next step.
+Take a note of this address, you will need it for your next step.
 </li>
 <li>
+   <img class="centerImage" src="img/circle4.png"/>
 From your circle home page, choose "SEND MONEY".
-<img src="img/circle4.png"/>Take the BTC address you created in the previous step, and paste it into the "To" field, then write the amount (In Fiat), that you want to transfer to Poloniex. If this is your first time doing something like this, I highly reccomend sending a small test payment first.
-</li>
-<li>
+Take the BTC address you created in the previous step, and paste it into the "To" field, then write the amount (In Fiat), that you want to transfer to Poloniex. If this is your first time doing something like this, I highly reccomend sending a small test payment first.</br>
 You are almost there, this transfer will take a few minutes to be verified, so don't worry if it doesn't happen as fast as the purchase on circle.
 </li>
-<li>
-Once your Bitcoins are in your Poloniex wallet, you are ready to buy NEM. Poloniex, and most other exchanges, offer multiple ways to buy or sell cryptocurrencies, but I will outline the simplest way. Click on the exchanges tab, and click on NEM in the BTC Markets on the top right portion of the screen. Now Scroll down past "Buy NEM" to view the "Sell Orders". These orders are put up by people that have NEM, and are looking to trade it for BTC. Simply select the topmost Sell order, you will notice that the "Buy NEM" box is now filled with the order you just clicked on. <img src="img/polo3.png"/>Select "Buy", and you are now a proud owner of NEM.
+<li><img class="floatRight" width="250px" src="img/polo3.png"/>
+Once your Bitcoins are in your Poloniex wallet, you are ready to buy NEM. Poloniex, and most other exchanges, offer multiple ways to buy or sell cryptocurrencies, but I will outline the simplest way. Click on the exchanges tab, and click on NEM in the BTC Markets on the top right portion of the screen. Now Scroll down past "Buy NEM" to view the "Sell Orders". These orders are put up by people that have NEM, and are looking to trade it for BTC. Simply select the topmost Sell order, you will notice that the "Buy NEM" box is now filled with the order you just clicked on. Select "Buy", and you are now a proud owner of NEM.
 </li>
 <li>
 We highly recommend storing NEM in your own private wallet, rather than storing it on a centralized exchange. You can read all about how to do that, and why it is so important, <a href="#">HERE</a>
 </li>
 </ol>
-</div>
-      </div>
-    </div>
--->
+
+
 
 
 

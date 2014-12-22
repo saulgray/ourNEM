@@ -64,9 +64,27 @@
                      <li class="skiplink"><a href="#" gumby-goto="[data-target='nemClient']" gumby-duration="1000" gumby-offset="-160"><span id="navclient"></span></a></li>
                      <li class="skiplink"><a href="#" gumby-goto="[data-target='purchaseNem']" gumby-duration="1000" gumby-offset="-30"><span id="navbuy"></span></a></li>
                      <li class="skiplink"><a href="#" gumby-goto="[data-target='faqs']" gumby-duration="1000" gumby-offset="-190"><span id="navfaq"></span></a></li>
-                     <li><a href="specs.html"><span id="navtech"></span></a></li>
+                     <li><a href=""><span id="navtech"></span><i class="icon-down-open-big"></i></a>
+							<div class="dropdown">
+							<ul>
+								<li><a href="https://github.com/NewEconomyMovement/NemCommunityClient/blob/master/docs/api.md"><span id="navtech">NCC API</span></a></li>
+								<li><a href="https://drive.google.com/file/d/0B_te3HSCdxPVZVQ5OGt1anVaVlE/view"><span id="navtech">NIS API</span></a></li>
+							</ul>
+							</div>
+							</li>
                      <li class="skip"><a href="#" gumby-goto="[data-target='nemClient']" gumby-duration="1000"><span id="navupdate"></span></a></li>
-                     <li><a href="#"><span id="navlang"></span></a></li>
+                     <li>
+								<a href="#"><span id="navlang"></span><i class="icon-down-open-big"></i></a>
+									<div class="dropdown">
+							        <ul>
+							          <li><a id="en" href="?setLng=en"><span>English en-US</span></a></li>
+
+							          <li><a id="de" href="?setLng=de-DE"><span>English en-US TEST</span></a></li>
+							          <li><a href="#"><span id="navtech">TEXT</span></a></li>
+							          <li><a href="#"><span id="navtech">TEXT</span></a></li>
+							        </ul>
+							      </div>
+							</li>
                   </ul>
                </div>
             </nav>
@@ -197,51 +215,7 @@
       <div class="parallax parallax1" gumby-parallax=".5">
          <div class="row mainClientWrap">
             <div class="push_six six columns test2 mainClient" id="mainClient" data-target="nemClient">
-<!------------------- -->
-                   <ul class="nav">
-      <li><a href="#" data-i18n="nav.name"></a></li>
-      <li><a href="#" data-i18n="nav.page1"></a></li>
-      <li><a href="#" data-i18n="nav.page2"></a></li>
-    </ul>
-    <h3> you can switch lng via ?setLng='lngTag' </h3>
-    <a id="en" href="?setLng=en"> en-US </a>
-        | &nbsp;
-    <a id="de" href="?setLng=de-DE"> de-DE </a>
 
-    <h3>translated via $.t('app.name')</h3>
-    <span id="appclient"></span> - <span id="navclient"></span>
-    <button id="add">hello</button>
-
-    <h5>with value insert $.t('app.insert', {youAre: 'great'})</h5>
-    <span id="insert"></span>
-
-    <h5>with plural $.t('app.insert', {youAre: 'great'})</h5>
-    <span id="singular"></span> - <span id="plural"></span>
-
-    <h5>nesting</h5>
-    <span id="nesting"></span>
-
-    <h5>with translation context $.t('friend_context', {context: 'male || female'})</h5>
-    <span id="male"></span> - <span id="female"></span>
-
-
-    <h3>loaded via attribute 'data-i18n' and $('.nav').i18n();</h3>
-
-    <h5>basic text</h5>
-    <ul class="nav">
-        <li class="active"><a href="#" data-i18n="nav.home"></a></li>
-        <li><a href="#" data-i18n="nav.1"></a></li>
-        <li><a href="#" data-i18n="nav.2"></a></li>
-    </ul>
-
-    <button id="btn" data-i18n="ns.common:add"></button>
-
-    <h5>extended usage of 'data-i18n' - apply to other attributes</h5>
-    <div id="extendedAttr">
-        <input data-i18n="[placeholder]ns.common:attr.placeholder;" type="text"></input>
-        <button data-i18n="[title]ns.common:attr.title;btn.hoverMe;"></button>
-    </div>
-<!------------------ -->
 
 
 
@@ -310,22 +284,22 @@
                   <div class="joined">
                      <ul class="three_up tiles">
                         <li>
-                           <img class="floatLeft nemIcon" src="img/64x64.png"/>
+                           <img class="nemIcon" src="img/64x64.png"/>
                         </li>
                         <li>
                            <img class="arrows" src="img/arrows.png"/>
                         </li>
                         <li>
-                           <img class="bitcoin floatRight" src="img/bitcoin.svg"/>
+                           <img class="bitcoin" src="img/bitcoin.svg"/>
                         </li>
                      </ul>
                      <div class="ten columns centered">
-                        <p>Get your share of NEM while it is still in Alpha</p>
+                        <p id="buybox1"></p>
                      </div>
                   </div>
                   <div class="ten columns centered test2">
                      <p>
-                        <a href="#" class="btn btn-1 btn-1e button">GET NEM HERE</a>
+                        <a href="#" id="buybox1click" class="btn btn-1 btn-1e button"></a>
                      </p>
                   </div>
                </div>
@@ -339,16 +313,16 @@
                            <img class="arrows" src="img/arrows.png"/>
                         </li>
                         <li>
-                           <img class="bitcoin floatRight" src="img/bitcoin.svg"/>
+                           <img class="bitcoin" src="img/bitcoin.svg"/>
                         </li>
                      </ul>
                      <div class="ten columns centered">
-                        <p>NEM will be available at <strong>Poloniex</strong> shortly after launch</p>
+                        <p id="buybox2"></p>
                      </div>
                   </div>
                   <div class="ten columns centered test2">
                      <p>
-                        <a href="#" class="button comingSoon">COMING SOON</a>
+                        <a href="#" id="buybox2click" class="button comingSoon"></a>
                      </p>
                   </div>
                </div>
@@ -366,15 +340,31 @@
                         </li>
                      </ul>
                      <div class="ten columns centered">
-                        <p>Buy NEM directly with cash</p>
+                        <p id="buybox3"></p>
                      </div>
                   </div>
                   <div class="ten columns centered test2">
                      <p>
-                        <a href="#" class="button comingSoon">COMING SOON</a>
+                        <a href="#" id="buybox3click" class="button comingSoon"></a>
                      </p>
                   </div>
                </div>
+            </div>
+            <div class="row purchase border otherXchange">
+               <div class="">
+                  <div class="inside">
+<img src="img/bterSat.png"/>
+</div>
+<div class="inside">
+<img height="20px" src="img/btc38Sat.png"/>
+</div>
+<div class="inside">
+<img height="20px" src="img/poloniexSat.png"/>
+</div>
+<div class="inside">
+<img height="20px" src="img/bittrexSat.png"/>
+</div>
+</div>
             </div>
             <div class="row purchase">
                <div class="twelve columns buyGuide inview" gumby-classname="onscreen" gumby-offset="50">
@@ -383,6 +373,9 @@
                   </h5>
                </div>
             </div>
+
+            <div id="innerHtml" data-i18n="[html]html.content;"></div>
+
          </div>
       </div>
       <div class="faqs" data-target="faqs">
@@ -420,43 +413,41 @@
          <footer class="row footLinks" gumby-shuffle="only screen and (max-width: 767px)|1-0">
             <div class=" four columns inview" gumby-classname="onscreen" gumby-offset="150" >
                <img src="img/logoWhite2.png"/>
-               <p id="footerlogotext">
-
-               </p>
+               <p id="footerlogotext"></p>
             </div>
             <div class="push_two six columns">
                <section class="three_up tiles">
                   <div class="tile">
                      <ul>
-                        <li>Resources</li>
-                        <li><a href="https://github.com/NewEconomyMovement">NEM Github</a></li>
-                        <li><a href="https://bitcointalk.org/index.php?topic=654845.0">Bitcointalk Thread</a></li>
-                        <li><a href="https://docs.google.com/spreadsheet/ccc?key=0Ak91SD0veCeddDdmTkdaWV8zbHp2dWlodDVEVUItbXc&usp=sharing&richtext=true#gid=10">Final Stakeholder List</a></li>
-                        <li><a href="http://www.ournem.com/s/NEMhandout20140618.pdf">NEM Intro Handout</a></li>
-                        <li><a href="http://news.nemcoin.com/">NEM News</a></li>
-                        <li><a href="http://www.altnemo.com/">NEM Crowdsale</a></li>
+                        <li id="footerresources"></li>
+                        <li><a id="footerresources1" href="https://github.com/NewEconomyMovement"></a></li>
+                        <li><a id="footerresources2" href="https://bitcointalk.org/index.php?topic=654845.0"></a></li>
+                        <li><a id="footerresources3"  href="https://docs.google.com/spreadsheet/ccc?key=0Ak91SD0veCeddDdmTkdaWV8zbHp2dWlodDVEVUItbXc&usp=sharing&richtext=true#gid=10"></a></li>
+                        <li><a id="footerresources4" href="http://www.ournem.com/s/NEMhandout20140618.pdf"></a></li>
+                        <li><a id="footerresources5" href="http://news.nemcoin.com/"></a></li>
+                        <li><a id="footerresources6" href="http://www.altnemo.com/"></a></li>
                      </ul>
                   </div>
                   <div class="tile">
                      <ul>
-                        <li>Articles</li>
-                        <li><a href="#">NEM on Vice</a></li>
-                        <li><a href="#">Dolor Sit</a></li>
-                        <li><a href="#">Consectetur</a></li>
-                        <li><a href="#">Adipiscing</a></li>
-                        <li><a href="#">Morbi Non</a></li>
-                        <li><a href="#">Justo Eu</a></li>
+                        <li id="footerarticles"></li>
+                        <li><a id="footerarticles1" href="#"></a></li>
+                        <li><a id="footerarticles2" href="#"></a></li>
+                        <li><a id="footerarticles3" href="#"></a></li>
+                        <li><a id="footerarticles4" href="#"></a></li>
+                        <li><a id="footerarticles5" href="#"></a></li>
+								<li><a id="footerarticles6" href="#"></a></li>
                      </ul>
                   </div>
                   <div class="tile">
                      <ul>
-                        <li>Newsletter</li>
-								<li><a href="https://medium.com/@xtester/nem-newsletter-6-2014-10-19-6cc2c2cc99be">Newsletter #6</a></li>
-                        <li><a href="https://medium.com/@nemcoin/nem-newsletter-5-2014-9-9-2fa100be1aa6">Newsletter #5</a></li>
-                        <li><a href="https://medium.com/@nemcoin/newsletter-4-2014-8-12-e7851c28330c">Newsletter #4</a></li>
-                        <li><a href="#">Newsletter #3</a></li>
-                        <li><a href="#">Newsletter #2</a></li>
-                        <li><a href="http://news.nemcoin.com/wp-content/plugins/pdfjs-viewer-shortcode/web/viewer.php?file=http://news.nemcoin.com/wp-content/uploads/2014/06/Newsletter20140601.pdf&download=true&print=true&openfile=false">Newsletter #1</a></li>
+                        <li id="footernewsletters"></li>
+                        <li><a id="footernewsletters1" href="https://medium.com/@xtester/nem-newsletter-7-2014-10-21-5c78d69bbb12"></a></li>
+								<li><a id="footernewsletters2" href="https://medium.com/@xtester/nem-newsletter-6-2014-10-19-6cc2c2cc99be"></a></li>
+                        <li><a id="footernewsletters3" href="https://medium.com/@nemcoin/nem-newsletter-5-2014-9-9-2fa100be1aa6"></a></li>
+                        <li><a id="footernewsletters4" href="https://medium.com/@nemcoin/newsletter-4-2014-8-12-e7851c28330c"></a></li>
+                        <li><a id="footernewsletters5" href="#"></a></li>
+                        <li><a id="footernewsletters6" href="#"></a></li>
                      </ul>
                   </div>
                </section>
