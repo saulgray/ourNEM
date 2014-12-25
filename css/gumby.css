@@ -1835,6 +1835,23 @@ margin-right: 5%;
 
 .border { min-height: 340px; padding: 2%; margin-top: 0px; background-color: white; }
 
+.testimonials { text-align: right; background-color: #444; padding-top: 70px; padding-bottom: 70px; }
+.testimonials .testimWrap { font-size: 300%; margin-bottom: 20px; padding-right: 4% !important; padding-left: 4% !important; color: white; font-weight: 300; display: inline-block; float: left; padding-left: 0.96154%; padding-right: 0.96154%; width: 100%; }
+@media only screen and (min-width: 0px) { .testimonials .testimWrap { width: 100%; } }
+@media only screen and (min-width: 768px) { .testimonials .testimWrap { width: 33.33333%; } }
+@media only screen and (min-width: 1040px) { .testimonials .testimWrap { width: 33.33333%; } }
+.testimonials .user1 { font-size: 48px; }
+.testimonials .user2 { margin-top: 0px; }
+.testimonials .user3 { text-align: left; }
+.testimonials .user1comment { font-size: 16px; color: white; }
+.testimonials .user3comment { font-size: 16px; text-align: left; }
+
+.user1 img { width: 75px; margin-left: 20px; vertical-align: middle; -webkit-border-radius: 50px; -moz-border-radius: 50px; -ms-border-radius: 50px; -o-border-radius: 50px; border-radius: 50px; }
+
+.user2 img { width: 75px; margin-left: 20px; vertical-align: bottom; -webkit-border-radius: 50px; -moz-border-radius: 50px; -ms-border-radius: 50px; -o-border-radius: 50px; border-radius: 50px; }
+
+.user3 img { width: 75px; margin-right: 20px; vertical-align: top; -webkit-border-radius: 50px; -moz-border-radius: 50px; -ms-border-radius: 50px; -o-border-radius: 50px; border-radius: 50px; }
+
 .faqs { background-color: #fefef6; color: #40cd7e; }
 .faqs .four.columns { text-align: center; }
 .faqs .four.columns h3 { right: -120%; font-size: 45px; position: relative; opacity: 1; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s; transition: all 1s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; -webkit-transition-delay: 0s; -moz-transition-delay: 0s; -o-transition-delay: 0s; transition-delay: 0s; }
@@ -1849,6 +1866,7 @@ margin-right: 5%;
 
 #footer { text-align: left; background-color: #444; padding-top: 30px; color: white; }
 #footer a { color: white; }
+#footer a:hover { color: #41bf76; }
 
 .footLinks { margin-bottom: 50px; }
 .footLinks .four.columns { right: -15%; position: relative; opacity: 1; -webkit-transition: all 0.2s; -moz-transition: all 0.2s; -o-transition: all 0.2s; transition: all 0.2s; }
@@ -1978,7 +1996,7 @@ margin-right: 5%;
 
 a.anchor { display: block; position: relative; top: -200px; visibility: hidden; }
 
-#faq .headline { height: 30% !important; }
+#faq .headline { height: 30% !important; margin-top: 5%; }
 
 .headerFAQS { text-align: center; font-weight: 700; color: #fefef6; }
 

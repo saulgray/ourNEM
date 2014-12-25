@@ -72,12 +72,13 @@
 		$('#footernewsletters5').text($.t('footer.newsletters5'));
 		$('#footernewsletters6').text($.t('footer.newsletters6'));
 
+		$("#linkHtml").i18n();
+		$("#link2Html").i18n();
+		$("#faqnavwhat").i18n();
 
 
 
 
-
-$("#innerHtml").i18n();
 		$('#insert').text($.t('app.insert', {youAre: 'great'}))
 		$('#singular').text($.t('app.child', {count: 1}))
 		$('#plural').text($.t('app.child', {count: 3}))

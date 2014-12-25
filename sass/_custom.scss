@@ -409,6 +409,60 @@ nav.fixed{
    margin-top: 0px;
    background-color: white;
 }
+//TESTIMONIALS START HERE
+.testimonials{
+   text-align: right;
+   background-color: #444;
+   padding-top: 70px;
+   padding-bottom: 70px;
+
+   .testimWrap{
+      font-size: 300%;
+      margin-bottom: 20px;
+      padding-right: 4% !important;
+      padding-left: 4% !important;
+      color: white;
+      font-weight: 300;
+      @include fancytiles(3,3,1);
+   }
+   .user1{
+      font-size: $xxlarge;
+   }
+   .user2{
+      margin-top: 0px;
+   }
+   .user3{
+      text-align: left;
+
+   }
+   .user1comment{
+      font-size: $norm;
+      color: white;
+   }
+.user3comment{
+   font-size: $norm;
+   text-align: left;
+}
+}
+.user1 img{
+   width: 75px;
+margin-left: 20px;
+vertical-align: middle;
+   @include border-radius(50px);
+}
+.user2 img{
+   width: 75px;
+margin-left: 20px;
+vertical-align: bottom;
+   @include border-radius(50px);
+}
+.user3 img{
+   width: 75px;
+margin-right: 20px;
+vertical-align: top;
+   @include border-radius(50px);
+}
+//TESTIMONIALS END HERE
 .faqs{
    background-color: #fefef6;
    color: #40cd7e;
@@ -487,6 +541,9 @@ nav.fixed{
    color: white;
    a{
       color: white;
+      &:hover{
+         color: #41bf76;
+      }
    }
 }
 .footLinks {
@@ -876,6 +933,7 @@ a.anchor{display: block; position: relative; top: -200px; visibility: hidden;}
 // FAQ PAGE
 #faq .headline{
    height: 30% !important;
+   margin-top: 5%;
 }
 .headerFAQS{
    text-align: center;
