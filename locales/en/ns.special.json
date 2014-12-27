@@ -2,28 +2,26 @@
     "app": {
       "now": "GET NEM HERE",
       "coming": "COMING SOON",
-
-
-      "client": "NEM IS HERE!",
-      "nesting": "NEM IS DA SHIT!!!!!!",
-      "insert": "you are __youAre__",
-      "child": "__count__ child",
-      "child_plural": "__count__ children"
+      "first": "7",
+      "second": "6",
+      "third": "5",
+      "fourth": "4",
+      "fifth": "3"
    },
    "nav":{
       "client": "NEM CLIENT",
       "buy": "BUY NEM",
       "faq": "FAQ's",
-      "tech": "DEVELOPERS",
+      "tech": "<span>DEVELOPERS <i class=\"icon-down-open-big\"></i></span>",
       "update": "UPDATES",
-      "lang": "LANGUAGE"
+      "lang": "<span>ENGLISH <i class=\"icon-down-open-big\"></i></span>",
+      "__comment": "lang should be the name of the translated language"
    },
    "clients":{
       "header1": "NEM Community Client",
       "about1": "Open the Full Featured NEM Beta Client in your web browser, a simple two step process.",
       "click1": "INSTALL NEM COMMUNITY CLIENT",
-      "help1": "Need help with installing the NEM Client?",
-      "link1": "Follow our easy guide",
+      "help1": "Need help with installing the NEM Client? <a href=\"faq.html\"><span>Follow our easy guide</span></a>",
 
       "header2": "Streamlined 3rd Party NEM Client",
       "about2": "Open the NEM Beta Client, Features the Core NEM Features, and Easy to Install.",
@@ -42,7 +40,8 @@
       "box2": "NEM will be available at POLONIEX shortly after launch",
       "box2click": "$t(app.coming)",
       "box3": "Buy NEM directly with cash",
-      "box3click": "$t(app.coming)"
+      "box3click": "$t(app.coming)",
+      "help": "Need help with purchasing NEM? <a href=\"faq.html\"><span> learn more here</span></a>"
 
    },
    "faq":{
@@ -72,14 +71,23 @@
       "articles6": "",
 
       "newsletters": "Newsletter",
-      "newsletters1": "Newsletter __latest__",
-      "newsletters2": "Newsletter __latest__",
-      "newsletters3": "Newsletter __latest__",
-      "newsletters4": "Newsletter __latest__",
-      "newsletters5": "Newsletter __latest__",
-      "newsletters6": "Archives",
-      "latest": "1"
+      "newsletters1": "Newsletter $t(app.first)",
+      "newsletters2": "Newsletter $t(app.second)",
+      "newsletters3": "Newsletter $t(app.third)",
+      "newsletters4": "Newsletter $t(app.fourth)",
+      "newsletters5": "Newsletter $t(app.fifth)",
+      "newsletters6": "Archives"
+   },
+   "faqs":{
+      "nav":{
+         "what": "What's NEM",
+         "history": "History of NEM",
+         "redeem": "How to Redeem your NEM",
+         "bit": "Checking Browser Bit Version",
+         "java": "Installing Java",
+         "install": "Installing NEM Client (NCC/NIS)",
+         "buy": "Buying Some NEM"
+       }
    }
-
 
 }

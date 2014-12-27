@@ -75,6 +75,8 @@
 		$("#linkHtml").i18n();
 		$("#link2Html").i18n();
 		$("#faqnavwhat").i18n();
+		$("#navlang").i18n();
+		$("#navtech").i18n();
 
 
 

@@ -91,6 +91,7 @@ border-top: none;
 nav{
    width: 100%;
    height: 20%;
+   padding: inherit !important;
    background-color: white;
    .four.columns.logo{
       margin-top: 1.7%;
@@ -109,7 +110,7 @@ nav{
          */
       }
       li{
-         width: 120px;
+         min-width: 80px;
          text-align: center;
       }
       a{
@@ -147,10 +148,26 @@ nav.fixed{
       margin-bottom: -2px;
    }
 }
+.dropdown a > span{
+   @include respond("max-width: 768px") {
+   color: #444 !important;
+
+}
+}
+.dropdown ul, .dropdown, .dropdown li{
+   @include respond("max-width: 768px") {
+max-width: 300px;
+   background: #fff !important;
+   margin-left: 20%;
+   text-align: center;
+}
+}
 .navbar{
 
 }
-
+i.icon-down-open-big{
+   margin: 0;
+}
 .headline{
    text-align: inherit;
    margin-top: 30%;
@@ -158,20 +175,20 @@ nav.fixed{
 .headline svg{
    max-height: 490px !important;
 }
-.test3{
+.laptop{
    text-align: left;
    padding-left: 0px;
    margin-top: 70px;
    z-index: -11111;
 }
-.test3 img{
+.laptop img{
    position: relative;
    right: -45%;
    opacity: 1;
    @include transition(all .8s);
    @include transition-timing-function(ease-out);
 }
-.test3 img.onscreen {
+.laptop img.onscreen {
    right: 0%;
    opacity: 1;
 }
@@ -182,15 +199,17 @@ nav.fixed{
 }
 .clientTextSlide{
    position: relative;
-   left: -25%;
-   opacity: 0;
+left: -10%;
+opacity: 0;
+z-index: 160;
    @include transition(all .3s);
 }
 .clientTextSlide.onscreen {
    left: 0%;
    opacity: 1;
+   z-index: 160;
 @include transition(all .8s);
-@include transition-timing-function(ease-out);
+@include transition-timing-function(ease);
 @include transition-delay(.7s);
 }
 .thirdParty{
@@ -339,23 +358,23 @@ nav.fixed{
    width: 160px;
    @include border-radius(3px);
 }
-.otherXchange{
-   /*
-   margin-left: 5%;
-   margin-right: 5%;
-   */
-}
+
 .border.otherXchange{
    min-height: 30px;
    padding: 1% 0% .5% 0%;
    margin-top: 20px;
    background-color: white;
-   .inside{
+   .inside {
       @include fancytiles(4,4,2);
    }
-   img{
-      max-height: 20px;
+   .inside img{
+      max-height: 16px;
    }
+   /*
+   .inside2 img{
+      max-height: 20px !important;
+   }
+   */
 }
 .buyGuide{
    margin-top: 50px;
@@ -386,6 +405,9 @@ nav.fixed{
       margin-bottom: -2px;
       background-color: #41bf76;
    }
+}
+#buybox3{
+   padding-top: 30px;
 }
 .buyGuide.onscreen {
    left: 0px;
@@ -658,10 +680,12 @@ vertical-align: top;
 .btn-1e:hover,
 .btn-1e:active {
    color: white;
+   opacity: 1;
+   z-index: 60;
 }
 /* background size */
 .btn-1e:hover:after {
-   height: 600%;
+   height: 620%;
    opacity: 1;
 }
 /*
@@ -747,7 +771,7 @@ vertical-align: top;
       float: right;
    }
 }
-.test3{
+.laptop{
    @include hidden(tablet);
    @include hidden(all-phones);
 }
@@ -814,13 +838,69 @@ vertical-align: top;
 .four.columns.border{
    @include respond("max-width: 768px") {
       margin-top: 30px;
-      margin-left: 10px;
-      margin-right: 10px;
+      margin-left: 20px;
+      margin-right: 20px;
    }
 }
 .purchase .three_up, .purchase .ten.columns p{
    @include respond("max-width: 768px") {
       text-align: center !important;
+   }
+}
+.otherXchange a img{
+   @include respond("max-width: 768px") {
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+   }
+}
+/*
+.otherXchange{
+   @include respond("max-width: 768px") {
+      padding-bottom: 40px;
+   }
+}
+*/
+.user1 {
+   @include respond("max-width: 768px") {
+      padding-left: 50px !important;
+      padding-top: 5%;
+      padding-bottom: 2%;
+      text-align: right !important;
+   }
+}
+.user2 {
+   @include respond("max-width: 768px") {
+      padding-left: 150px !important;
+      padding-top: 5%;
+      padding-bottom: 2%;
+      text-align: right !important;
+   }
+}
+.user3 {
+   @include respond("max-width: 768px") {
+      padding-left: 50px !important;
+      padding-top: 5%;
+      padding-bottom: 2%;
+      text-align: right !important;
+   }
+}
+.user1comment {
+   @include respond("max-width: 768px") {
+      padding-left: 50px !important;
+      padding-right: 100px !important;
+
+      padding-bottom: 5%;
+      text-align: right;
+   }
+}
+.user3comment {
+   @include respond("max-width: 768px") {
+      padding-left: 50px !important;
+      padding-right: 100px !important;
+
+      padding-bottom: 5%;
+      text-align: right;
    }
 }
 .faqs .four.columns .valign:before {
@@ -858,6 +938,12 @@ vertical-align: top;
    left: 0%;
    opacity: 1;
 }
+}
+#footerlogotext{
+   @include respond("max-width: 768px") {
+      max-width: 60%;
+      margin: 0 auto;
+   }
 }
 #footer li, #footer, #footer p{
    @include respond("max-width: 768px") {
@@ -939,6 +1025,7 @@ a.anchor{display: block; position: relative; top: -200px; visibility: hidden;}
    text-align: center;
    font-weight: 700;
    color: #fefef6;
+   font-size: 400%;
 }
 #faq .sixteen.colgrid{
    padding-top: 40px;
@@ -953,6 +1040,9 @@ a.anchor{display: block; position: relative; top: -200px; visibility: hidden;}
    list-style-position: inside;
    list-style-image: url(../img/lozenge.png) !important;
    margin-top: 10px;
+}
+#faq #footer ul li{
+   list-style-image: none !important;
 }
 #faq ol li{
    list-style-position: outside;

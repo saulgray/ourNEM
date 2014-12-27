@@ -61,27 +61,25 @@
                      </a>
                   </h1>
                   <ul class="eight columns">
-                     <li class="skiplink"><a href="#" gumby-goto="[data-target='nemClient']" gumby-duration="1000" gumby-offset="-160"><span id="navclient"></span></a></li>
-                     <li class="skiplink"><a href="#" gumby-goto="[data-target='purchaseNem']" gumby-duration="1000" gumby-offset="-30"><span id="navbuy"></span></a></li>
-                     <li class="skiplink"><a href="#" gumby-goto="[data-target='faqs']" gumby-duration="1000" gumby-offset="-190"><span id="navfaq"></span></a></li>
-                     <li><a href=""><span id="navtech"></span><i class="icon-down-open-big"></i></a>
+                     <li class="skiplink"><a href="#" gumby-goto="[data-target='nemClient']" gumby-duration="1000" gumby-offset="-190"><span id="navclient"></span></a></li>
+                     <li class="skiplink"><a href="#" gumby-goto="[data-target='purchaseNem']" gumby-duration="1000" gumby-offset="+90"><span id="navbuy"></span></a></li>
+                     <li class="skiplink"><a href="#" gumby-goto="[data-target='faqs']" gumby-duration="2000" gumby-offset="+190"><span id="navfaq"></span></a></li>
+                     <li><a href id="navtech" data-i18n="[html]nav.tech"></a>
 							<div class="dropdown">
-							<ul>
-								<li><a href="https://github.com/NewEconomyMovement/NemCommunityClient/blob/master/docs/api.md"><span id="navtech">NCC API</span></a></li>
-								<li><a href="https://drive.google.com/file/d/0B_te3HSCdxPVZVQ5OGt1anVaVlE/view"><span id="navtech">NIS API</span></a></li>
-							</ul>
+   							<ul>
+   								<li><a href="https://github.com/NewEconomyMovement/NemCommunityClient/blob/master/docs/api.md"><span id="navtech">NCC API</span></a></li>
+   								<li><a href="https://drive.google.com/file/d/0B_te3HSCdxPVZVQ5OGt1anVaVlE/view"><span id="navtech">NIS API</span></a></li>
+   							</ul>
 							</div>
 							</li>
                      <li class="skip"><a href="#" gumby-goto="[data-target='nemClient']" gumby-duration="1000"><span id="navupdate"></span></a></li>
                      <li>
-								<a href="#"><span id="navlang"></span><i class="icon-down-open-big"></i></a>
+                        <a id="navlang" data-i18n="[html]nav.lang;" href="#"></a>
 									<div class="dropdown">
 							        <ul>
 							          <li><a id="en" href="?setLng=en"><span>English en-US</span></a></li>
-
 							          <li><a id="de" href="?setLng=de-DE"><span>English en-US TEST</span></a></li>
-							          <li><a href="#"><span id="navtech">TEXT</span></a></li>
-							          <li><a href="#"><span id="navtech">TEXT</span></a></li>
+
 							        </ul>
 							      </div>
 							</li>
@@ -234,7 +232,7 @@
                   </div>
                </span>
             </div>
-            <div class="pull_four eight columns test3">
+            <div class="pull_four eight columns laptop">
                <img class="inview" gumby-classname="onscreen" gumby-offset="250" src="img/laptopNEM.png"/>
             </div>
          </div>
@@ -242,8 +240,8 @@
          <div class="row">
             <div class="six columns thirdParty inview" gumby-classname="onscreen" gumby-offset="50">
                <h3 id="clientsheader2"></h3>
-               <p id="clientsabout2"></p>
-               <p><a href="#" class="comingS" id="clientsclick2"></a></p>
+               <p id="clientsabout2"></p><!-- Replace span with a tag when active -->
+               <p><span href="" class="comingS" id="clientsclick2"></span></p>
             </div>
          </div>
       </div>
@@ -300,7 +298,7 @@
                   </div>
                   <div class="ten columns centered test2">
                      <p>
-                        <a href="#" id="buybox1click" class="btn btn-1 btn-1e button"></a>
+                        <a href="https://trade.secureae.com/#12465186738101000735" id="buybox1click" class="btn btn-1 btn-1e button"></a>
                      </p>
                   </div>
                </div>
@@ -322,8 +320,8 @@
                      </div>
                   </div>
                   <div class="ten columns centered test2">
-                     <p>
-                        <a href="#" id="buybox2click" class="button comingSoon"></a>
+                     <p><!-- Replace span with a tag when active -->
+                        <span href="" id="buybox2click" class="button comingSoon"></span>
                      </p>
                   </div>
                </div>
@@ -345,25 +343,25 @@
                      </div>
                   </div>
                   <div class="ten columns centered test2">
-                     <p>
-                        <a href="#" id="buybox3click" class="button comingSoon"></a>
+                     <p><!-- Replace span with a tag when active -->
+                        <span href="" id="buybox3click" class="button comingSoon"></span>
                      </p>
                   </div>
                </div>
             </div>
             <div class="row purchase border otherXchange">
                <div class="">
-                  <div class="inside">
-<img src="img/bterSat.png"/>
+                  <div class="inside inside2">
+<a href="https://bter.com/"><img src="img/bterSat.png"/></a>
 </div>
 <div class="inside">
-<img height="20px" src="img/btc38Sat.png"/>
+<a href="http://www.btc38.com/"><img height="16px" src="img/btc38Sat.png"/></a>
 </div>
 <div class="inside">
-<img height="20px" src="img/poloniexSat.png"/>
+<a href="https://poloniex.com/"><img height="16px" src="img/poloniexSat.png"/></a>
 </div>
 <div class="inside">
-<img height="20px" src="img/bittrexSat.png"/>
+<a href="https://bittrex.com/"><img height="20px" src="img/bittrexSat.png"/></a>
 </div>
 </div>
             </div>
@@ -384,19 +382,19 @@
                <div class="user1">
                   <p>Saul Goodman<img src="img/saul.jpg"/></p>
                </div>
-               <div class="user1comment" id="">I bought NEM and now I no longer have to work as a shady lawyer in a Strip Mall</div>
+               <div class="user1comment" id="">I bought NEM and now I no longer have to work as a shady lawyer. This is STYLE #1</div>
             </div>
             <div class="testimWrap">
                <div class="user2">
                   <p>Saul Goodman<img src="img/saul.jpg"/></p>
                </div>
-               <div class="user1comment" id="">I bought NEM and now I no longer have to work as a shady lawyer in a Strip Mall</div>
+               <div class="user1comment" id="">I bought NEM and now I no longer have to work as a shady lawyer. This is STYLE #2</div>
             </div>
             <div class="testimWrap">
                <div class="user3">
                   <p><img src="img/saul.jpg"/>Saul Goodman</p>
                </div>
-               <div class="user3comment" id="">I bought NEM and now I no longer have to work as a shady lawyer in a Strip Mall</div>
+               <div class="user3comment" id="">I bought NEM and now I no longer have to work as a shady lawyer. This is STYLE #3, which style do you like?</div>
             </div>
          </div>
       </div>
@@ -420,13 +418,13 @@
                            <i class="icon-help-circled inview" gumby-classname="onscreen" gumby-offset="250"></i><a href="faq.html"><span class="inview" gumby-classname="onscreen" gumby-offset="250" id="faqreadfaq"></span></a>
                         </li>
                         <li class="faq2">
-                           <i class="icon-chat inview" gumby-classname="onscreen" gumby-offset="250"></i><a href="http://webchat.freenode.net/?channels=ournem"><span class="inview" gumby-classname="onscreen" id="faqirc" gumby-offset="250"></span></a>
+                           <i class="icon-chat inview" gumby-classname="onscreen" gumby-offset="230"></i><a href="http://webchat.freenode.net/?channels=ournem"><span class="inview" gumby-classname="onscreen" id="faqirc" gumby-offset="230"></span></a>
                         </li>
                         <li class="faq3">
-                           <i class="icon-users inview" gumby-classname="onscreen" gumby-offset="250"></i><a href="https://forum.nemcoin.com/index.php"><span class="inview" gumby-classname="onscreen" gumby-offset="250" id="faqforum"></span></a>
+                           <i class="icon-users inview" gumby-classname="onscreen" gumby-offset="210"></i><a href="https://forum.nemcoin.com/index.php"><span class="inview" gumby-classname="onscreen" gumby-offset="210" id="faqforum"></span></a>
                         </li>
                         <li class="faq4">
-                           <i class="icon-keyboard inview" gumby-classname="onscreen" gumby-offset="250"></i><a href="http://wiki.nemcoin.com/index.php"><span class="inview" gumby-classname="onscreen" gumby-offset="250" id="faqwiki"></span></a>
+                           <i class="icon-keyboard inview" gumby-classname="onscreen" gumby-offset="190"></i><a href="http://wiki.nemcoin.com/index.php"><span class="inview" gumby-classname="onscreen" gumby-offset="190" id="faqwiki"></span></a>
                         </li>
                      </ul>
                   </div>
@@ -456,9 +454,9 @@
                   <div class="tile">
                      <ul>
                         <li id="footerarticles"></li>
-                        <li><a id="footerarticles1" href="#"></a></li>
-                        <li><a id="footerarticles2" href="#"></a></li>
-                        <li><a id="footerarticles3" href="#"></a></li>
+                        <li><a id="footerarticles1" href="http://motherboard.vice.com/read/this-cryptocurrency-doesnt-want-to-beat-bitcoin-it-wants-to-beat-the-economy"></a></li>
+                        <li><a id="footerarticles2" href="http://finance.yahoo.com/news/cryptocurrency-nem-gears-change-trade-100500963.html"></a></li>
+                        <li><a id="footerarticles3" href="http://cointelegraph.com/news/112265/an-introduction-to-the-new-economy-movement"></a></li>
                         <li><a id="footerarticles4" href="#"></a></li>
                         <li><a id="footerarticles5" href="#"></a></li>
 								<li><a id="footerarticles6" href="#"></a></li>

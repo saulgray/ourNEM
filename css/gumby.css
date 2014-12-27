@@ -1717,7 +1717,7 @@ a > span:hover:before { visibility: visible; -webkit-transform: scaleX(1); trans
 
 .gumby-no-touch .navbar li .dropdown ul li a:hover { background: transparent !important; }
 
-nav { width: 100%; height: 20%; background-color: white; }
+nav { width: 100%; height: 20%; padding: inherit !important; background-color: white; }
 nav .four.columns.logo { margin-top: 1.7%; }
 nav .eight.columns { margin-top: 2.5%; text-align: inherit; }
 nav .eight.columns .dropdown { border-top: none; /*
@@ -1725,7 +1725,7 @@ padding-top: 20px;
 margin-top: 20px;
 */ }
 nav .eight.columns .dropdown a > span:before { margin-bottom: -2px; }
-nav .eight.columns li { width: 120px; text-align: center; }
+nav .eight.columns li { min-width: 80px; text-align: center; }
 nav .eight.columns a { text-align: inherit; font-weight: 500; }
 nav .eight.columns span:hover { color: #41bf76 !important; font-weight: 700; }
 
@@ -1738,21 +1738,27 @@ nav.fixed .eight.columns .dropdown { margin-top: 0px; }
 nav.fixed img { width: 100px; }
 nav.fixed a > span:before { margin-bottom: -2px; }
 
+@media only screen and (max-width: 768px) { .dropdown a > span { color: #444 !important; } }
+
+@media only screen and (max-width: 768px) { .dropdown ul, .dropdown, .dropdown li { max-width: 300px; background: #fff !important; margin-left: 20%; text-align: center; } }
+
+i.icon-down-open-big { margin: 0; }
+
 .headline { text-align: inherit; margin-top: 30%; }
 
 .headline svg { max-height: 490px !important; }
 
-.test3 { text-align: left; padding-left: 0px; margin-top: 70px; z-index: -11111; }
+.laptop { text-align: left; padding-left: 0px; margin-top: 70px; z-index: -11111; }
 
-.test3 img { position: relative; right: -45%; opacity: 1; -webkit-transition: all 0.8s; -moz-transition: all 0.8s; -o-transition: all 0.8s; transition: all 0.8s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; }
+.laptop img { position: relative; right: -45%; opacity: 1; -webkit-transition: all 0.8s; -moz-transition: all 0.8s; -o-transition: all 0.8s; transition: all 0.8s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; }
 
-.test3 img.onscreen { right: 0%; opacity: 1; }
+.laptop img.onscreen { right: 0%; opacity: 1; }
 
 .mainClient { position: relative; z-index: 1; min-height: 62px; }
 
-.clientTextSlide { position: relative; left: -25%; opacity: 0; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
+.clientTextSlide { position: relative; left: -10%; opacity: 0; z-index: 160; -webkit-transition: all 0.3s; -moz-transition: all 0.3s; -o-transition: all 0.3s; transition: all 0.3s; }
 
-.clientTextSlide.onscreen { left: 0%; opacity: 1; -webkit-transition: all 0.8s; -moz-transition: all 0.8s; -o-transition: all 0.8s; transition: all 0.8s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; -webkit-transition-delay: 0.7s; -moz-transition-delay: 0.7s; -o-transition-delay: 0.7s; transition-delay: 0.7s; }
+.clientTextSlide.onscreen { left: 0%; opacity: 1; z-index: 160; -webkit-transition: all 0.8s; -moz-transition: all 0.8s; -o-transition: all 0.8s; transition: all 0.8s; -webkit-transition-timing-function: ease; -moz-transition-timing-function: ease; -o-transition-timing-function: ease; transition-timing-function: ease; -webkit-transition-delay: 0.7s; -moz-transition-delay: 0.7s; -o-transition-delay: 0.7s; transition-delay: 0.7s; }
 
 .thirdParty { position: relative; right: -10%; opacity: 0; -webkit-transition: all 0.8s; -moz-transition: all 0.8s; -o-transition: all 0.8s; transition: all 0.8s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; -webkit-transition-delay: 1.4s; -moz-transition-delay: 1.4s; -o-transition-delay: 1.4s; transition-delay: 1.4s; }
 
@@ -1809,23 +1815,23 @@ nav.fixed a > span:before { margin-bottom: -2px; }
 
 .button { margin: .4em; padding: .8em; cursor: pointer; background: transparent; text-decoration: none; border: 3px solid #444; color: #666; font-weight: 500; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); width: 160px; -webkit-border-radius: 3px; -moz-border-radius: 3px; -ms-border-radius: 3px; -o-border-radius: 3px; border-radius: 3px; }
 
-.otherXchange { /*
-margin-left: 5%;
-margin-right: 5%;
+.border.otherXchange { min-height: 30px; padding: 1% 0% .5% 0%; margin-top: 20px; background-color: white; /*
+.inside2 img{ max-height: 20px !important;
+}
 */ }
-
-.border.otherXchange { min-height: 30px; padding: 1% 0% .5% 0%; margin-top: 20px; background-color: white; }
 .border.otherXchange .inside { display: inline-block; float: left; padding-left: 0.96154%; padding-right: 0.96154%; width: 50%; }
 @media only screen and (min-width: 0px) { .border.otherXchange .inside { width: 50%; } }
 @media only screen and (min-width: 768px) { .border.otherXchange .inside { width: 25%; } }
 @media only screen and (min-width: 1040px) { .border.otherXchange .inside { width: 25%; } }
-.border.otherXchange img { max-height: 20px; }
+.border.otherXchange .inside img { max-height: 16px; }
 
 .buyGuide { margin-top: 50px; margin-bottom: 70px !important; padding-top: 10px; margin-bottom: 10px; width: 100% !important; margin-bottom: 30px; background-color: transparent; text-align: center; position: relative; left: -40px; opacity: 0; -webkit-transition: all 0.8s; -moz-transition: all 0.8s; -o-transition: all 0.8s; transition: all 0.8s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; }
 .buyGuide h5 { font-size: 18px; }
 .buyGuide span { color: #41bf76; font-size: 16px; font-weight: 500; }
 .buyGuide a > span:hover { color: #41bf76 !important; }
 .buyGuide a > span:before { margin-bottom: -2px; background-color: #41bf76; }
+
+#buybox3 { padding-top: 30px; }
 
 .buyGuide.onscreen { left: 0px; opacity: 1; }
 
@@ -1895,10 +1901,10 @@ margin-right: 5%;
 
 .btn-1e:after { width: 100%; height: 0; top: 50%; left: 50%; background: #444; opacity: 0; -webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg); -moz-transform: translateX(-50%) translateY(-50%) rotate(45deg); -ms-transform: translateX(-50%) translateY(-50%) rotate(45deg); transform: translateX(-50%) translateY(-50%) rotate(45deg); }
 
-.btn-1e:hover, .btn-1e:active { color: white; }
+.btn-1e:hover, .btn-1e:active { color: white; opacity: 1; z-index: 60; }
 
 /* background size */
-.btn-1e:hover:after { height: 600%; opacity: 1; }
+.btn-1e:hover:after { height: 620%; opacity: 1; }
 
 /*
 .btn-1e:active:after { height: 520%; opacity: 1;
@@ -1928,8 +1934,8 @@ margin-right: 5%;
 @media only screen and (min-width: 768px) { .hideDesktop { display: none !important; } }
 .hideDesktop img { width: 40%; overflow: hidden; float: right; }
 
-@media only screen and (tablet) { .test3 { display: none !important; } }
-@media only screen and (max-width: 767px) { .test3 { display: none !important; } }
+@media only screen and (tablet) { .laptop { display: none !important; } }
+@media only screen and (max-width: 767px) { .laptop { display: none !important; } }
 
 @media only screen and (max-width: 768px) { .mainClient { width: 400px; padding: 20px; overflow: hidden; } }
 
@@ -1949,9 +1955,25 @@ margin-right: 5%;
 
 @media only screen and (max-width: 768px) { .joined { min-height: 200px; padding-top: 30px; } }
 
-@media only screen and (max-width: 768px) { .four.columns.border { margin-top: 30px; margin-left: 10px; margin-right: 10px; } }
+@media only screen and (max-width: 768px) { .four.columns.border { margin-top: 30px; margin-left: 20px; margin-right: 20px; } }
 
 @media only screen and (max-width: 768px) { .purchase .three_up, .purchase .ten.columns p { text-align: center !important; } }
+
+@media only screen and (max-width: 768px) { .otherXchange a img { margin-top: 20px; margin-bottom: 20px; } }
+
+/*
+.otherXchange{ @include respond("max-width: 768px") { padding-bottom: 40px; }
+}
+*/
+@media only screen and (max-width: 768px) { .user1 { padding-left: 50px !important; padding-top: 5%; padding-bottom: 2%; text-align: right !important; } }
+
+@media only screen and (max-width: 768px) { .user2 { padding-left: 150px !important; padding-top: 5%; padding-bottom: 2%; text-align: right !important; } }
+
+@media only screen and (max-width: 768px) { .user3 { padding-left: 50px !important; padding-top: 5%; padding-bottom: 2%; text-align: right !important; } }
+
+@media only screen and (max-width: 768px) { .user1comment { padding-left: 50px !important; padding-right: 100px !important; padding-bottom: 5%; text-align: right; } }
+
+@media only screen and (max-width: 768px) { .user3comment { padding-left: 50px !important; padding-right: 100px !important; padding-bottom: 5%; text-align: right; } }
 
 @media only screen and (max-width: 768px) { .faqs .four.columns .valign:before { height: 60px; margin-top: 80px; } }
 
@@ -1962,6 +1984,8 @@ margin-right: 5%;
 @media only screen and (max-width: 768px) { .faqs span { position: relative; right: 0%; opacity: 1; } }
 
 @media only screen and (max-width: 768px) { .faqs li i { position: relative; left: 0%; opacity: 1; } }
+
+@media only screen and (max-width: 768px) { #footerlogotext { max-width: 60%; margin: 0 auto; } }
 
 @media only screen and (max-width: 768px) { #footer li, #footer, #footer p { text-align: center !important; } }
 
@@ -1998,13 +2022,15 @@ a.anchor { display: block; position: relative; top: -200px; visibility: hidden; 
 
 #faq .headline { height: 30% !important; margin-top: 5%; }
 
-.headerFAQS { text-align: center; font-weight: 700; color: #fefef6; }
+.headerFAQS { text-align: center; font-weight: 700; color: #fefef6; font-size: 400%; }
 
 #faq .sixteen.colgrid { padding-top: 40px; background: url(../img/geometry.png); }
 
 #faq .eleven.columns { background: white; padding: 25px; }
 
 #faq ul li { list-style-position: inside; list-style-image: url(../img/lozenge.png) !important; margin-top: 10px; }
+
+#faq #footer ul li { list-style-image: none !important; }
 
 #faq ol li { list-style-position: outside; margin-top: 20px; }
 
