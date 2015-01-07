@@ -8,7 +8,7 @@
 		$('#add').text($.t('ns.common:add'));
 		$('#appname').text($.t('app.name'));
 		$('#appclient').text($.t('app.client'));
-
+		<!-- OURNEM HOMEPAGE -->
 		$('#navclient').text($.t('nav.client'));
 		$('#navbuy').text($.t('nav.buy'));
 		$('#navfaq').text($.t('nav.faq'));
@@ -38,7 +38,6 @@
 		$('#buybox2click').text($.t('buy.box2click'));
 		$('#buybox3').text($.t('buy.box3'));
 		$('#buybox3click').text($.t('buy.box3click'));
-
 
 		$('#faqheader').text($.t('faq.header'));
 		$('#faqreadfaq').text($.t('faq.readfaq'));
@@ -71,13 +70,88 @@
 		$('#footernewsletters4').text($.t('footer.newsletters4'));
 		$('#footernewsletters5').text($.t('footer.newsletters5'));
 		$('#footernewsletters6').text($.t('footer.newsletters6'));
-
+		<!-- SPECIAL LINKS -->
 		$("#linkHtml").i18n();
 		$("#link2Html").i18n();
 		$("#faqnavwhat").i18n();
 		$("#navlang").i18n();
 		$("#navtech").i18n();
+		<!-- FAQ PAGE -->
+		$('.headerFAQS').text($.t('faqs.headerFaqs'));
 
+		$('#sideNavWhat').text($.t('faqs.nav.what'));
+		$('#sideNavHistory').text($.t('faqs.nav.history'));
+		$('#sideNavRedeem').text($.t('faqs.nav.redeem'));
+		$('#sideNavDistr').text($.t('faqs.nav.distr'));
+		$('#sideNavBit').text($.t('faqs.nav.bit'));
+		$('#sideNavJava').text($.t('faqs.nav.java'));
+		$('#sideNavInstall').text($.t('faqs.nav.install'));
+		$('#sideNavBuy').text($.t('faqs.nav.buy'));
+
+		$('.first').text($.t('faqs.whatHeader'));
+		$('#whatContent').text($.t('faqs.whatContent'));
+
+		$('#historyHeader').text($.t('faqs.historyHeader'));
+		$('#historyContent li:nth-child(1)').text($.t('faqs.history1'));
+		$('#historyContent li:nth-child(2)').text($.t('faqs.history2'));
+		$('#historyContent li:nth-child(3)').text($.t('faqs.history3'));
+		$('#historyContent li:nth-child(4)').text($.t('faqs.history4'));
+		$('#historyContent li:nth-child(5)').text($.t('faqs.history5'));
+		$('#historyContent li:nth-child(6)').text($.t('faqs.history6'));
+		$('#historyContent li:nth-child(7)').text($.t('faqs.history7'));
+		$('#historyContent li:nth-child(8)').text($.t('faqs.history8'));
+		$('#historyContent li:nth-child(9)').text($.t('faqs.history9'));
+		$('#historyContent li:nth-child(10)').text($.t('faqs.history10'));
+
+		$('#distrbtnHeader').text($.t('faqs.distrbtnHeader'));
+		$('#distrbtnIntro').text($.t('faqs.distrbtnIntro'));
+		$('#distrbtnStats li:nth-child(1)').text($.t('faqs.distrbtn1'));
+		$('#distrbtnStats li:nth-child(2)').text($.t('faqs.distrbtn2'));
+		$('#distrbtnStats li:nth-child(3)').text($.t('faqs.distrbtn3'));
+		$('#distrbtnStats li:nth-child(4)').text($.t('faqs.distrbtn4'));
+		$("#distrbtnStats li:nth-child(5)").i18n();
+
+
+		$('#bitHeader').text($.t('faqs.bitHeader'));
+		$('#bitIntro').text($.t('faqs.bitIntro'));
+		$('#bitInstructions li:nth-child(1)').i18n();
+		$('#bitInstructions li:nth-child(2)').i18n();
+		$('#bitInstructions li:nth-child(3)').i18n();
+		$('#bitInstructions li:nth-child(4)').i18n();
+
+		$('#javaHeader').text($.t('faqs.javaHeader'));
+		$('#javaText').i18n();
+		$('#javaWindowsHead').i18n();
+		$('#javaWindowsVideo').i18n();
+		$('#javaWindowsMan').i18n();
+		$('#javaMacHead').i18n();
+		$('#javaMacVideo').i18n();
+		$('#javaMacMan').i18n();
+		$('#javaLinuxHead').i18n();
+		$('#javaLinuxVideo').i18n();
+		$('#javaLinuxMan').i18n();
+
+		$('#installClient').text($.t('faqs.installClient'));
+		$('#installStep1').i18n();
+		$('#installStep2').i18n();
+		$('#installStep3').i18n();
+		$('#installStep4').i18n();
+
+		$('#buyNemHead').text($.t('faqs.buyNemHead'));
+		$('#buyNem').i18n();
+		$('#buyBitcoin').text($.t('faqs.buyBitcoin'));
+		$('#buyBitcoinInfo').i18n();
+		$('#buyingBitcoin1').i18n();
+		$('#buyingBitcoin2').i18n();
+		$('#buyingBitcoin3').i18n();
+		$('#buyingBitcoin4').i18n();
+		$('#buyingBitcoin5').i18n();
+		$('#buyingNem').text($.t('faqs.buyingNem'));
+		$('#buyingNem1').i18n();
+		$('#buyingNem2').i18n();
+		$('#buyingNem3').i18n();
+		$('#buyingNem4').i18n();
+		$('#buyingNem5').i18n();
 
 
 

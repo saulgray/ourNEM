@@ -128,7 +128,7 @@ nav{
 nav.fixed{
    width: 100%;
    background: white;
-   z-index: 10;
+   z-index: 10000;
    @include hidden(all-phones);
    @include hidden(portrait-tablets);
    height: 65px;
@@ -1058,6 +1058,7 @@ a.anchor{display: block; position: relative; top: -200px; visibility: hidden;}
    padding: 10px;
 }
 }
+
 #faq nav#sidebar-nav-holder.fixed{
    margin-top: 85px;
 }
@@ -1066,7 +1067,7 @@ a.anchor{display: block; position: relative; top: -200px; visibility: hidden;}
 }
 
 // FAUX CODE START
-.code{
+.browserBit span{
    font-family: monospace;
    font-weight: 500;
    background: #000;

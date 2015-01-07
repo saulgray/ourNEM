@@ -87,7 +87,7 @@
 <div class="row">
      <section class="six columns centered">
       <div class="headline">
-          <h1 class="inview headerFAQS" gumby-classname="onscreen" gumby-offset="50">FAQs</h1>
+          <h1 class="inview headerFAQS" gumby-classname="onscreen" gumby-offset="50"></h1>
      </div>
      </section>
 </div>
@@ -97,34 +97,36 @@
 <div class="sixteen colgrid">
     <div class="row">
                 <section class="five columns">
-          <nav id="sidebar-nav-holder" gumby-fixed="240">
+          <nav id="sidebar-nav-holder" gumby-fixed="240" gumby-pin="[data-target='buy-nem']">
             <ul id="sidebar-nav" class="border">
 
                 <li>
-                  <a href="#whats-nem" class="skip" gumby-update gumby-duration="600" gumby-goto="[data-target='whats-nem']"><span>What's NEM</span></a>
+                  <a href="#whats-nem" class="skip" gumby-update gumby-duration="600" gumby-offset="-70" gumby-goto="[data-target='whats-nem']"><span id="sideNavWhat"></span></a>
                 </li>
 
                 <li>
-                  <a href="#nem-timeline" class="skip" gumby-update gumby-duration="600" gumby-goto="[data-target='nem-timeline']"><span>History of NEM</span></a>
+                  <a href="#nem-timeline" class="skip" gumby-update gumby-duration="600" gumby-offset="-70" gumby-goto="[data-target='nem-timeline']"><span id="sideNavHistory"></span></a>
                 </li>
 
                 <li>
-                  <a href="#redemption" class="skip" gumby-update gumby-duration="600" gumby-goto="[data-target='redemption']"><span>How to Redeem Your NEM</span></a>
+                  <a href="#redemption" class="skip" gumby-update gumby-duration="600" gumby-offset="-70" gumby-goto="[data-target='redeem']"><span id="sideNavRedeem"></span></a>
+                </li>
+                <li>
+                   <a href="#distribution" class="skip" gumby-update gumby-duration="600" gumby-offset="-70" gumby-goto="[data-target='distribution']"><span id="sideNavDistr"></span></a>
+                </li>
+                <li>
+                  <a href="#browser-version" class="skip" gumby-update gumby-duration="600" gumby-offset="-70" gumby-goto="[data-target='browser-version']"><span id="sideNavBit"></span></a>
                 </li>
 
                 <li>
-                  <a href="#browser-version" class="skip" gumby-update gumby-duration="600" gumby-goto="[data-target='browser-version']"><span>Checking Browser Bit Version</span></a>
+                  <a href="#install-java" class="skip" gumby-update gumby-duration="600" gumby-offset="-70" gumby-goto="[data-target='install-java']"><span id="sideNavJava"></span></a>
                 </li>
 
                 <li>
-                  <a href="#install-java" class="skip" gumby-update gumby-duration="600" gumby-goto="[data-target='install-java']"><span>Installing Java</span></a>
-                </li>
-
-                <li>
-                  <a href="#install-NEM" class="skip" gumby-update gumby-duration="600" gumby-goto="[data-target='install-nem']"><span>Installing NEM Client (NCC/NIS)</span></a>
+                  <a href="#install-NEM" class="skip" gumby-update gumby-duration="600" gumby-offset="-70" gumby-goto="[data-target='install-nem']"><span id="sideNavInstall"></span></a>
                 </li>
                 <li>
-                  <a href="#buying-NEM" class="skip" gumby-update gumby-duration="600" gumby-goto="[data-target='buy-nem']"><span>Buying some NEM</span></a>
+                  <a href="#buying-NEM" class="skip" gumby-update gumby-duration="600" gumby-offset="-70" gumby-goto="[data-target='buy-nem']"><span id="sideNavBuy"></span></a>
                 </li>
 
             </ul>
@@ -135,59 +137,33 @@
 
 
     <div class="left-center" data-target="whats-nem">
-            <h2 class="first">What's NEM?</h2>
-  <p>
-    <div></div>
-NEM (New Economy Movement) is a brand-new, upcoming 2nd-generation cryptocurrency.
-NEM is being written from scratch with 100% original code, sharing nothing with any other digital currency.
-NEM is not just a currency, but a technological platform. It has the ability to support many activities which involve a trust-less consensus between two parties: a decentralised exchange, messaging, reputation systems etc.
-However, NEM is more than this. This movement was built upon foundations of fairness, equality and solidarity; foundations which every NEM stakeholder and user should respect and try to adhere to.
+            <h2 class="first"></h2>
+  <p id="whatContent"></p>
           </div>
 
 
 
           <div class="left-center" data-target="nem-timeline">
-            <h2>History of NEM</h2>
+            <h2 id="historyHeader"></h2>
             <p>
-            <ul>
-            <li>
- Initial fundraising - 1/19/2014 to 2/17/2014
- </li>
- <li>
-Waiting list open - 2/21/2014 to 4/10/2014
-</li>
-<li>
-Public auditing of stakeholder list - 3/2/2014 to 4/9/2014
-</li>
-<li>
-Waiting list invitation - 4/28/2014 to 5/9/2014
-</li>
-<li>
-Final stakeholder list published - 5/10/2014
-</li>
-<li>
-Development contract (first draft) published - 5/25/2014
-</li>
-<li>
-NEMstake on asset exchange - 5/30/2014
-</li>
-<li>
-Open Alpha release - 6/25/2014
-</li>
-<li>
-Open Beta release - 10/20/2014
-</li>
-<li>
-Official launch - Scheduled for November
-</li>
-
-</ul>
+            <ul id="historyContent">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            </ul>
             </p>
           </div>
 
 
 
-          <div class="left-center" data-target="initial-distribution">
+          <div class="left-center" data-target="redeem">
             <h2>How to Redeem your NEM</h2>
             <ol>
             <li>
@@ -217,161 +193,102 @@ Official launch - Scheduled for November
 
 
 
-          <div class="left-center" data-target="retina-images">
-            <h2>Initial NEM Distribution</h2>
-            <p>
-NEM will have a maximum of 4 000 000 000 coins, all distributed with the genesis block. Each Stakeholder will be receiving 1 000 000 to 2 000 000 NEM per stake. Each NEM coin will be divisible to 6 figures (i.e. the smallest amount of NEM is 0.000001 NEM). The total supply will be distributed as follows:
-  </p>
-<ul>
-<li>
-72% - distributed to stakeholders on the final Bitcointalk Stakeholder list.
-</li>
-<li>
-10% - reserved for the core development team to fund development of the NCC and NIS up to the release of V.1 of the blockchain.
-</li>
-<li>
-10% - reserved for the core development team to fund development of the NCC and NIS after the release of V.1 of the blockchain.
-</li>
-<li>
-5% - reserved for the extended development team; those who are working on promoting NEM and the NEM ecosystem.
-</li>
-<li>
-The 10% development reserve will be allocated under the following guidelines:
-Released gradually over time: maximum average of 10% every 2 months. This means the full amount will be distributed in close to 20 months (probably longer); a testament to the dedication of the developers to their long-term plans for NEM's future.
-The reserve will be used to fund important features and big projects, such as private transactions, encrypted messaging, multi-signature implementation and more.
-</li>
-</ul>
+          <div class="left-center" data-target="distribution" gumby-offset="250">
+            <h2 id="distrbtnHeader"></h2>
+            <p id="distrbtnIntro"></p>
+            <ul id="distrbtnStats">
+               <li></li>
+               <li></li>
+               <li></li>
+               <li></li>
+               <li data-i18n="[html]faqs.distrbtn5;"></li>
+            </ul>
           </div>
-          <div class="left-center" data-target="browser-version">
-             <h2>Checking Browser Bit Version</h2>
-            If you need to install Java, then the first step is to check if your browser is 32-bit or 64-bit. Note: that there is a difference between having a 64-bit operating system, and a 64-bit browser.
-<ul>
-   <li>
-            In Chrome, type <span class="code">chrome://chrome</span> in your search bar, you will see the version #, and at the end of the line you will see bit #. either 32-bit or 64-bit.
-         </li>
-         <li>
-            In Firefox, type <span class="code">about:</span> in your browser. You will see a line that starts with Build-Identifier, if in that line you see:  x86_64, then you are using a 64-bit browser. If you see i686, you are using a 32 bit browser
-         </li>
-         <li>
-            In Opera , type <span class="code">opera:about</span> in your browser. Under Browser identification, you will see x86_64 for 64-bit, or you will see i686 for 32-bit
-         </li>
-         <li>
-            In Internet Explorer, it can be difficult to tell which version you are using, you can find some clues <a href="http://answers.microsoft.com/en-us/ie/forum/ie8-windows_other/version-of-ie-32-bit-or-64-bit-how-can-i-tell/75488de3-fffa-4782-be0a-c536c9a70151">HERE</a>, however, you should take this as a sign that you should be using one of the browsers mentioned above instead.
-         </li>
-      </ul>
-            <div class="left-center" data-target="install-java">
-               <h2>Installing Java - Windows</h2>
-Check your java version <a href="https://www.java.com/en/download/installed.jsp">HERE</a>, if you are using Java Version 8, update 25 or above, you are ready to install the NEM client.
+          <div class="left-center browserBit" data-target="browser-version">
+             <h2 id="bitHeader"></h2>
+             <p id="bitIntro">
 
-Here is a video tutorial on how to install Java 8 on Windows 8, although the instructions are for Java 7, they are identical to the instructions for Java 8. When selecting the Java version make sure to pick 32-bit or 64-bit, depending on your browser, which was discussed in <a href="#browser-version">"Checking Browser Bit Version"</a>
-<article class="youtube video">
+         </p>
+<ul id="bitInstructions">
+         <li data-i18n="[html]faqs.bitChrome;"></li>
+         <li data-i18n="[html]faqs.bitFirefox;"></li>
+         <li data-i18n="[html]faqs.bitOpera;"></li>
+         <li data-i18n="[html]faqs.bitIE;"></li>
+      </ul>
+   </div>
+            <div class="left-center" data-target="install-java">
+               <h2 id="javaHeader"></h2>
+               <p id="javaText" data-i18n="[html]faqs.javaText;"></p>
+               <div class="left-center">
+               <h2 id="javaWindowsHead" data-i18n="[html]faqs.javaWindowsHead;"></h2>
+               <p id="javaWindowsVideo" data-i18n="[html]faqs.javaWindowsVideo;"></p>
+<article class="youtube video centerImage">
 <iframe width="560" height="315" src="//www.youtube.com/embed/mINYU1AD_aw" frameborder="0" allowfullscreen></iframe>
 </article>
-There is also a wikihow entry on installing Java 8 <a href="http://www.wikihow.com/Install-Java-on-Windows-8">HERE</a>
-
+<p id="javaWindowsMan" data-i18n="[html]faqs.javaWindowsMan;"></p>
 </div>
-<div class="left-center" data-target="install-java">
-   <h2>Installing Java - Mac OSX</h2>
-Here is a video tutorial on how to install Java on Mac OSX. When selecting the Java version make sure to pick 32-bit or 64-bit, depending on your browser, which was discussed in <a href="#browser-version">"Checking Browser Bit Version"</a>
-<article class="youtube video">
+<div class="left-center">
+   <h2 id="javaMacHead" data-i18n="[html]faqs.javaMacHead;"></h2>
+   <p id="javaMacVideo" data-i18n="[html]faqs.javaMacVideo;"></p>
+<article class="youtube video centerImage">
 <iframe width="420" height="315" src="//www.youtube.com/embed/yRhbVC7_tyc" frameborder="0" allowfullscreen></iframe>
 </article>
-Also the Java website has a good Mac OSX install tutorial, that can be found <a href="https://www.java.com/en/download/help/mac_install.xml">HERE</a>
+<p id="javaMacMan" data-i18n="[html]faqs.javaMacMan;"></p>
 </div>
-<div class="left-center" data-target="install-java">
-   <h2>Installing Java - Linux</h2>
+<div class="left-center">
+   <h2 id="javaLinuxHead" data-i18n="[html]faqs.javaLinuxHead;"></h2>
+<p id="javaLinuxVideo" data-i18n="[html]faqs.javaLinuxVideo;">
 
-How to install Java 8 in Ubuntu/Mint
-<article class="youtube video">
+</p>
+<article class="youtube video centerImage">
 <iframe width="420" height="315" src="//www.youtube.com/embed/EpxDsVti4aY" frameborder="0" allowfullscreen></iframe>
 </article>
-It is essentially these commands, if you don't want to watch the video:
-<div class="terminalWrap">
+<p id="javaLinuxMan" data-i18n="[html]faqs.javaLinuxMan;">
+
+
+<div class="terminalWrap centerImage">
 <div class="terminal">sudo apt-get purge openjdk*</div>
 <div class="terminal">sudo add-apt-repository ppa:webupd8team/java</div>
 <div class="terminal">sudo apt-get update</div>
 <div class="terminal">sudo apt-get install oracle-java8-installer</div>
 <div class="terminal">sudo apt-get install oracle-java8-set-default</div>
-
+</p>
 </div>
 
 
           </div>
 
 <div class="left-center" data-target="install-nem">
-   <h2>Installing NEM Client</h2>
+   <h2 id="installClient"></h2>
 <ul>
-   <li>
-   <img class="floatRight" width="250px" src="img/nem-monitor.png"/>
-             The developers have made installing NEM Client a rather easy process, just <a href="http://bob.nem.ninja/webstart/nem-monitor.jnlp">Get the NEM Monitor</a>, and accept the download, on Chrome it will ask you to save the file, save the file wherever it is convenient for you.
-          </li>
-          <li>
-         nem monitor does all the heavy lifting for you, it installs NIS and NCC, and after about 3-5 minutes, you are ready to log in. During the installatio process, you will notice a NEM Icon in your toolbar, once it is ready, it will look like this: <img src="img/2-3.png"/>
-      </li>
-      <li>
-             Your browser should have opened automatically to <a href="http://127.0.0.1:8989/ncc/web/index.html">http://127.0.0.1:8989/ncc/web/index.html</a>, if it hasn't, simply go there now. You will be asked to create an account or login to anexisting account, most likely if you are reading this, you will be creating a new account.
-          </li>
-          <li>
-   It is very important that the password you use is secure. I recomend generating and storing your passwords with a <a href="https://en.wikipedia.org/wiki/Password_manager">password manager</a>. The password must be enough bits to prevent a brute force attack, but it also must be remembered. Losing your password is not an option, there is no way to recover an account if the password is lost. <a href="http://keepass.info/download.html">Keepass</a> <a href="http://www.keepassx.org/downloads/">Keepassx</a> are both good password managers, and there are many more options as well.
-</li>
+   <li id="installStep1" data-i18n="[html]faqs.installStep1;"></li>
+          <li id="installStep2" data-i18n="[html]faqs.installStep2;"></li>
+      <li id="installStep3" data-i18n="[html]faqs.installStep3;"></li>
+          <li id="installStep4" data-i18n="[html]faqs.installStep4;"></li>
 </ul>
 
           </div>
 
 
-        <h2 data-target="buy-nem">How to Purchase NEM</h2>
-        <p>In order to purchase NEM, you currently need to purchase Bitcoin first. In the future NEM will be able to directly be bought with fiat, but for now, you must use Bitcoin (or another cryptocurrency. Below I will lay out how to purchase Bitcoin, if you already have Bitcoin, skip to <a href="#">STEP 6</a></p>
+        <h2 id="buyNemHead" data-target="buy-nem"></h2>
+        <p id="buyNem" data-i18n="[html]faqs.buyNem;"></p>
 
-        <h3>Buying Bitcoin</h3>
-        <p>Every day new options for buying Bitcoin become available. In the past I would have used coinbase, however, today I will use circle.
-             <img class="centerImage" src="img/circle2.png"/>
-             </p>
-
+        <h3 id="buyBitcoin"></h3>
+        <p id="buyBitcoinInfo" data-i18n="[html]faqs.buyingBitcoinInfo;"></p>
         <ol>
-        <li>
+        <li id="buyingBitcoin1" data-i18n="[html]faqs.buyingBitcoin1;"></li>
+        <li id="buyingBitcoin2" data-i18n="[html]faqs.buyingBitcoin2;"></li>
+        <li id="buyingBitcoin3" data-i18n="[html]faqs.buyingBitcoin3;"></li>
+        <li id="buyingBitcoin4" data-i18n="[html]faqs.buyingBitcoin4;"></li>
+        <li id="buyingBitcoin5" data-i18n="[html]faqs.buyingBitcoin5;"></li>
 
-        First, go to circle.com, and fill in your name, email address and password.
-</li>
-        <li>
-           <img class="floatRight" width="250px" src="img/circleConfirm.png"/>
-        You will then receive a confirmation email, simply confirm the email address by clicking on the link
-</li>
-        <li>
-        You will then be prompted to enter your phone number, this enables extra security for your account, taken from Circle "This makes your account more secure by combining something you know (your password) with something you have (your phone) when you authenticate. When you take certain actions, we send a code to your phone to verify that it's you taking the action."
-</li>
-        <li><img width="200px" class="floatRight" src="img/circle1.png"/>
-        You are almost done, now it's time to enter the method of payment you plan to use. Using a credit card results in an instant transfer of Bitcoin to your account, but some company's charge a fee (I was charged a 2.9% fee, but your expereience could vary). You can also link a bank account, and pay 0 fees, but that will take a few days to be verified.
-</li>
-<li>
-
-Now it is time to make the purchase, on the home page, click <a href="https://www.circle.com/deposit">Add Funds</a>. You will see a page similar to the image below. Simply choose one of the funding sources you added in the previous step, and enter the amount of USD or other fiat you want to convert into Bitcoin.
-To learn more about how to use circle, check out their <a href="https://support.circle.com/hc/en-us/articles/201207324">Tips</a> page.
-<img class="centerImage" width="200px" src="img/circle3.png"/>
-</li>
-<h3>Buying NEM</h3>
-<li>Congratulations, you now have Bitcoin! To purchase NEM, you will need to use an exchange such as Poloniex.  Creating an account there is nearly identical to circle, <img class="floatRight" src="img/polo1.png"/>however it should be faster as you will not be prompted to add features such as 2 factor authentication (although I highly reccomend enabling 2FA, there is a link under your username)
-</li>
-<li><img class="floatRight" src="img/polo2.png"/>
-Once logged into your Poloniex account, click on the "Balances" tab, and scroll down to [BTC] Bitcoin, and click on "Generate New BTC Address".
-Take a note of this address, you will need it for your next step.
-</li>
-<li>
-   <img class="centerImage" src="img/circle4.png"/>
-From your circle home page, choose "SEND MONEY".
-Take the BTC address you created in the previous step, and paste it into the "To" field, then write the amount (In Fiat), that you want to transfer to Poloniex. If this is your first time doing something like this, I highly reccomend sending a small test payment first.</br>
-You are almost there, this transfer will take a few minutes to be verified, so don't worry if it doesn't happen as fast as the purchase on circle.
-</li>
-<li><img class="floatRight" width="250px" src="img/polo3.png"/>
-Once your Bitcoins are in your Poloniex wallet, you are ready to buy NEM. Poloniex, and most other exchanges, offer multiple ways to buy or sell cryptocurrencies, but I will outline the simplest way. Click on the exchanges tab, and click on NEM in the BTC Markets on the top right portion of the screen. Now Scroll down past "Buy NEM" to view the "Sell Orders". These orders are put up by people that have NEM, and are looking to trade it for BTC. Simply select the topmost Sell order, you will notice that the "Buy NEM" box is now filled with the order you just clicked on. Select "Buy", and you are now a proud owner of NEM.
-</li>
-<li>
-We highly recommend storing NEM in your own private wallet, rather than storing it on a centralized exchange. You can read all about how to do that, and why it is so important, <a href="#">HERE</a>
-</li>
+<h3 id="step6 buyingNem"></h3>
+<li id="buyingNem1" data-i18n="[html]faqs.buyingNem1;"></li>
+<li id="buyingNem2" data-i18n="[html]faqs.buyingNem2;"></li>
+<li id="buyingNem3" data-i18n="[html]faqs.buyingNem3;"></li>
+<li id="buyingNem4" data-i18n="[html]faqs.buyingNem4;"></li>
+<li id="buyingNem5" data-i18n="[html]faqs.buyingNem5;"></li>
 </ol>
-
-
-
-
 
  </div>
 </div>

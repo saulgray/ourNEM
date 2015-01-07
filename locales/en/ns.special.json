@@ -79,15 +79,85 @@
       "newsletters6": "Archives"
    },
    "faqs":{
+      "headerFaqs": "FAQs",
+
       "nav":{
          "what": "What's NEM",
          "history": "History of NEM",
          "redeem": "How to Redeem your NEM",
+         "distr": "Initial NEM Distribution",
          "bit": "Checking Browser Bit Version",
          "java": "Installing Java",
          "install": "Installing NEM Client (NCC/NIS)",
          "buy": "Buying Some NEM"
-       }
-   }
+      },
+      "whatHeader": "What's NEM?",
+      "whatContent": "NEM (New Economy Movement) is a brand-new, upcoming 2nd-generation cryptocurrency. NEM is being written from scratch with 100% original code, sharing nothing with any other digital currency. NEM is not just a currency, but a technological platform. It has the ability to support many activities which involve a trust-less consensus between two parties: a decentralised exchange, messaging, reputation systems etc. However, NEM is more than this. This movement was built upon foundations of fairness, equality and solidarity; foundations which every NEM stakeholder and user should respect and try to adhere to.",
 
+      "historyHeader": "History of NEM",
+      "history1": "Initial fundraising - 1/19/2014 to 2/17/2014",
+      "history2": "Waiting list open - 2/21/2014 to 4/10/2014",
+      "history3": "Public auditing of stakeholder list - 3/2/2014 to 4/9/2014",
+      "history4": "Waiting list invitation - 4/28/2014 to 5/9/2014",
+      "history5": "Final stakeholder list published - 5/10/2014",
+      "history6": "Development contract (first draft) published - 5/25/2014",
+      "history7": "NEMstake on asset exchange - 5/30/2014",
+      "history8": "Open Alpha release - 6/25/2014",
+      "history9": "Open Beta release - 10/20/2014",
+      "history10": "Official launch - Scheduled for November",
+
+      "distrbtnHeader": "Initial NEM Distribution",
+      "distrbtnIntro": "NEM will have a maximum of 4 000 000 000 coins, all distributed with the genesis block. Each Stakeholder will be receiving 1 000 000 to 2 000 000 NEM per stake. Each NEM coin will be divisible to 6 figures (i.e. the smallest amount of NEM is 0.000001 NEM). The total supply will be distributed as follows:",
+      "distrbtn1": "72% - distributed to stakeholders on the final Bitcointalk Stakeholder list.",
+      "distrbtn2": "10% - reserved for the core development team to fund development of the NCC and NIS up to the release of V.1 of the blockchain.",
+      "distrbtn3": "10% - reserved for the core development team to fund development of the NCC and NIS after the release of V.1 of the blockchain.",
+      "distrbtn4": "5% - reserved for the extended development team, those who are working on promoting NEM and the NEM ecosystem.",
+      "distrbtn5": "The 10% development reserve will be allocated under the following guidelines:<br>Released gradually over time: maximum average of 10% every 2 months. This means the full amount will be distributed in close to 20 months (probably longer), a testament to the dedication of the developers to their long-term plans for NEM's future.<br>The reserve will be used to fund important features and big projects, such as private transactions, encrypted messaging, multi-signature implementation and more.",
+
+      "bitHeader": "Checking Browser Bit Version",
+      "bitIntro": "If you need to install Java, then the first step is to check if your browser is 32-bit or 64-bit. Note: that there is a difference between having a 64-bit operating system, and a 64-bit browser.",
+      "bitChrome": "In Chrome, type <span>chrome://chrome</span> in your search bar, you will see the version #, and at the end of the line you will see bit #. either 32-bit or 64-bit.",
+      "bitFirefox": "In Firefox, type <span>about:</span> in your browser. You will see a line that starts with Build-Identifier, if in that line you see:  x86_64, then you are using a 64-bit browser. If you see i686, you are using a 32 bit browser",
+      "bitOpera": "In Opera , type <span>opera:about</span> in your browser. Under Browser identification, you will see x86_64 for 64-bit, or you will see i686 for 32-bit",
+      "bitIE": "In Internet Explorer, it can be difficult to tell which version you are using, you can find some clues <a href=\"http://answers.microsoft.com/en-us/ie/forum/ie8-windows_other/version-of-ie-32-bit-or-64-bit-how-can-i-tell/75488de3-fffa-4782-be0a-c536c9a70151\">HERE</a>, however, you should take this as a sign that you should be using one of the browsers mentioned above instead.",
+
+      "javaHeader": "Installing Java",
+      "javaText": "Check your java version <a href=\"https://www.java.com/en/download/installed.jsp\">HERE</a>, if you are using Java Version 8, update 25 or above, you are ready to install the NEM client.<br>Remember, when selecting the Java version make sure to pick 32-bit or 64-bit, depending on your browser. Your computers bit version DOES NOT MATTER. This is discussed in <a href=\"#browser-version\">Checking Browser Bit Version</a>",
+
+      "javaWindowsHead": "Installing Java - Windows",
+      "javaWindowsVideo": "Here is a video tutorial on how to install Java 8 on Windows 8, although the instructions are for Java 7, they are identical to the instructions for Java 8. When selecting the Java version make sure to pick 32-bit or 64-bit, depending on your browser, which was discussed in <a href=\"#browser-version\">Checking Browser Bit Version</a>",
+      "javaWindowsMan": "There is also a wikihow entry on installing Java 8 <a href=\"http://www.wikihow.com/Install-Java-on-Windows-8\">HERE</a>",
+
+      "javaMacHead": "Installing Java - Mac OSX",
+      "javaMacVideo": "Here is a video tutorial on how to install Java on Mac OSX. When selecting the Java version make sure to pick 32-bit or 64-bit, depending on your browser, which was discussed in <a href=\"#browser-version\">Checking Browser Bit Version</a>",
+      "javaMacMan": "Also the Java website has a good Mac OSX install tutorial, that can be found <a href=\"https://www.java.com/en/download/help/mac_install.xml\">HERE</a>",
+
+      "javaLinuxHead": "Installing Java - Linux",
+      "javaLinuxVideo": "A great video on how to install Java 8 in Ubuntu/Mint",
+      "javaLinuxMan": "It is essentially these commands, if you don't want to watch the video:",
+
+      "installClient": "Installing NEM Client",
+      "installStep1": "<img class=\"floatRight\" width=\"250px\" src=\"img/nem-monitor.png\"/>The developers have made installing NEM Client a rather easy process, just <a href=\"http://bob.nem.ninja/webstart/nem-monitor.jnlp\">Get the NEM Monitor</a>, and accept the download, on Chrome it will ask you to save the file, save the file wherever it is convenient for you.",
+      "installStep2": "NEM monitor does all the heavy lifting for you, it installs NIS and NCC, and after about 3-5 minutes, you are ready to log in. During the installatio process, you will notice a NEM Icon in your toolbar, once it is ready, it will look like this: <img src=\"img/2-3.png\"/>",
+      "installStep3": "Your browser should have opened automatically to <a href=\"http://127.0.0.1:8989/ncc/web/index.html\">http://127.0.0.1:8989/ncc/web/index.html</a>, if it hasn't, simply go there now. You will be asked to create an account or login to anexisting account, most likely if you are reading this, you will be creating a new account.",
+      "installStep4": "It is very important that the password you use is secure. I recomend generating and storing your passwords with a <a href=\"https://en.wikipedia.org/wiki/Password_manager\">password manager</a>. The password must be enough bits to prevent a brute force attack, but it also must be remembered. Losing your password is not an option, there is no way to recover an account if the password is lost. <a href=\"http://keepass.info/download.html\">Keepass</a> <a href=\"http://www.keepassx.org/downloads/\">Keepassx</a> are both good password managers, and there are many more options as well.",
+
+      "buyNemHead": "How to Purchase NEM",
+      "buyNem": "In order to purchase NEM, you currently need to purchase Bitcoin first. In the future NEM will be able to directly be bought with fiat, but for now, you must use Bitcoin (or another cryptocurrency. Below I will lay out how to purchase Bitcoin, if you already have Bitcoin, skip to <a href=\"#step6\">STEP 6</a>",
+      "buyBitcoin": "Buying Bitcoin",
+      "buyBitcoinInfo": "Every day new options for buying Bitcoin become available. In the past I would have used coinbase, however, today I will use circle.<img class=\"centerImage\" src=\"img/circle2.png\"/>",
+      "buyingBitcoin1": "First, go to circle.com, and fill in your name, email address and password.",
+      "buyingBitcoin2": "<img class=\"floatRight\" width=\"250px\" src=\"img/circleConfirm.png\"/>You will then receive a confirmation email, simply confirm the email address by clicking on the link",
+      "buyingBitcoin3": "You will then be prompted to enter your phone number, this enables extra security for your account, taken from Circle \"This makes your account more secure by combining something you know (your password) with something you have (your phone) when you authenticate. When you take certain actions, we send a code to your phone to verify that it's you taking the action.\"",
+      "buyingBitcoin4": "<img width=\"200px\" class=\"floatRight\" src=\"img/circle1.png\"/>You are almost done, now it's time to enter the method of payment you plan to use. Using a credit card results in an instant transfer of Bitcoin to your account, but some company's charge a fee (I was charged a 2.9% fee, but your expereience could vary). You can also link a bank account, and pay 0 fees, but that will take a few days to be verified.",
+      "buyingBitcoin5": "Now it is time to make the purchase, on the home page, click <a href=\"https://www.circle.com/deposit\">Add Funds</a>. You will see a page similar to the image below. Simply choose one of the funding sources you added in the previous step, and enter the amount of USD or other fiat you want to convert into Bitcoin.<br> To learn more about how to use circle, check out their <a href=\"https://support.circle.com/hc/en-us/articles/201207324\">Tips</a> page.<img class=\"centerImage\" width=\"200px\" src=\"img/circle3.png\"/>",
+
+      "buyingNem": "Buying NEM",
+      "buyingNem1": "Congratulations, you now have Bitcoin! To purchase NEM, you will need to use an exchange such as Poloniex.  Creating an account there is nearly identical to circle, <img class=\"floatRight\" src=\"img/polo1.png\"/>however it should be faster as you will not be prompted to add features such as 2 factor authentication (although I highly reccomend enabling 2FA, there is a link under your username).",
+      "buyingNem2": "<img class=\"floatRight\" src=\"img/polo2.png\"/>Once logged into your Poloniex account, click on the \"Balances\" tab, and scroll down to [BTC] Bitcoin, and click on \"Generate New BTC Address\".<br>Take a note of this address, you will need it for your next step.",
+      "buyingNem3": "<img class=\"centerImage\" src=\"img/circle4.png\"/>From your circle home page, choose \"SEND MONEY\".<br>Take the BTC address you created in the previous step, and paste it into the \"To\" field, then write the amount (In Fiat), that you want to transfer to Poloniex. If this is your first time doing something like this, I highly reccomend sending a small test payment first.<br>You are almost there, this transfer will take a few minutes to be verified, so don't worry if it doesn't happen as fast as the purchase on circle.",
+      "buyingNem4": "<img class=\"floatRight\" width=\"250px\" src=\"img/polo3.png\"/>Once your Bitcoins are in your Poloniex wallet, you are ready to buy NEM. Poloniex, and most other exchanges, offer multiple ways to buy or sell cryptocurrencies, but I will outline the simplest way. Click on the exchanges tab, and click on NEM in the BTC Markets on the top right portion of the screen. Now Scroll down past \"Buy NEM\" to view the \"Sell Orders\". These orders are put up by people that have NEM, and are looking to trade it for BTC. Simply select the topmost Sell order, you will notice that the \"Buy NEM\" box is now filled with the order you just clicked on. Select \"Buy\", and you are now a proud owner of NEM.",
+      "buyingNem5": "We highly recommend storing NEM in your own private wallet, some explanations are <a href=\"http://www.wired.com/2013/11/inputs/\">HERE</a> and  <a href=\"http://johnmeese.me/you-never-own-bitcoin/\">HERE</a>."
+
+   }
 }
