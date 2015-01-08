@@ -148,6 +148,7 @@
 		$('#buyingBitcoin5').i18n();
 		$('#buyingNem').text($.t('faqs.buyingNem'));
 		$('#buyingNem1').i18n();
+		$('#buyingNem1-1').i18n();
 		$('#buyingNem2').i18n();
 		$('#buyingNem3').i18n();
 		$('#buyingNem4').i18n();
