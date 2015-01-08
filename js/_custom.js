@@ -1,7 +1,7 @@
 
 	$.i18n.init({
 		//lng: 'en-US',
-		ns: { namespaces: ['ns.common', 'ns.special'], defaultNs: 'ns.special'},
+		ns: { namespaces: ['gizoogle', 'translation'], defaultNs: 'translation'},
 		useLocalStorage: false,
 		debug: true
 	}, function(t) {
