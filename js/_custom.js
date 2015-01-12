@@ -1,5 +1,5 @@
 
-	$.i18n.init({
+$.i18n.init({
 		//lng: 'en-US',
 		ns: { namespaces: ['gizoogle', 'translation'], defaultNs: 'translation'},
 		useLocalStorage: false,
@@ -41,9 +41,13 @@
 
 		$('#faqheader').text($.t('faq.header'));
 		$('#faqreadfaq').text($.t('faq.readfaq'));
+		$('#faqreadfaq2').text($.t('faq.readfaq2'));
 		$('#faqirc').text($.t('faq.irc'));
+		$('#faqirc2').text($.t('faq.irc2'));
 		$('#faqforum').text($.t('faq.forum'));
+		$('#faqforum2').text($.t('faq.forum2'));
 		$('#faqwiki').text($.t('faq.wiki'));
+		$('#faqwiki2').text($.t('faq.wiki2'));
 
 		$('#footerlogotext').text($.t('footer.logotext'));
 
@@ -167,6 +171,25 @@
 		$('#btn').i18n();
 		$('#extendedAttr').i18n();
 	});
+
+	// ##### Simple example 1 #####
+	// A simple example to get my latest tweet and write to a HTML element with
+	// id "example1". Also automatically hyperlinks URLS and user mentions and
+	// hashtags.
+	var config1 = {
+		"id": '474290838172749825',//@nemcoin
+		"domId": 'example1',
+		"maxTweets": 3,
+		"enableLinks": true,
+		"showUser": true,
+		"showImages": true,
+		"showTime": true,
+		"dateFunction": '',
+		"showRetweet": false,
+		"showInteraction": false
+
+	};
+	twitterFetcher.fetch(config1);
 
 // SMOOTH SCROLLING START
 $(function() {
