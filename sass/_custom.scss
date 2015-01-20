@@ -6,6 +6,7 @@
    padding-right: 0px;
 }
 // GUMBY OVERRIDES END
+$twittText: #222;
 .parallax1{
    background: url(../img/about-bg.jpg) no-repeat;
    background-size: cover;
@@ -25,7 +26,7 @@
    padding-top: 0px;
 }
 .parallaxTop{
-   background: url(../img/tempBackground.jpg) no-repeat;
+   background: url(../img/city-scape2.jpg) no-repeat;
    background-size: cover;
    min-height: 400px;
    height: 100%;
@@ -1174,39 +1175,51 @@ a.anchor{display: block; position: relative; top: -200px; visibility: hidden;}
    margin-bottom: 30px;
    ul{
       @include row();
-      li{
+      li{ //twitter boxes
+         padding: 4%;
+         background-color: white;
+         min-height: 500px;
+
          @include column(4);
-         overflow: hidden !important;
+         .tweet{
+            margin-top: 25%;
+            margin-bottom: 20%;
+            overflow: hidden !important;
+         }
          a span{
             color: #41bf76 !important;
+            height: 70%;
          }
       }
    }
 }
 .user a {
-   color: white !important;
+   color: $twittText !important;
 }
 .user a span:first-of-type {
    display:none;
    margin-right:25px;
-   color: white !important;
+   color: $twittText !important;
 }
 .user a span:last-of-type {
    display: block;
    margin-left:25px;
    margin-top:7px;
    font-size: 200%;
-   color: white !important;
+   color: $twittText !important;
 }
 .tweet{
    margin-top: 55px;
-
 }
 .timePosted{
    margin-left: 15px;
-   color: white !important;
+   color: $twittText !important;
 }
 .media img{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   max-height: 200px !important;
    @include border-corner-radius(top, left, 5px);
    @include border-corner-radius(top, right, 30px);
    @include border-corner-radius(bottom, left, 30px);
@@ -1215,16 +1228,23 @@ a.anchor{display: block; position: relative; top: -200px; visibility: hidden;}
 .user img{
    margin-left: 15px;
    float:left;
+
 }
 .user a > span {
    float:left;
 }
 .tweet{
-   color: white !important;
+   color: $twittText !important;
 }
+/*
 .tweet a{
-   color: #41bf76 !important;
+   color: blue !important;
 }
+.tweet ul a > span:before, .tweet ul a > i:before{
+   background-color: blue !important;
+}
+*/
+
 /*----------------------------------------
 .landing-socialLinks-icon {
    float: left;
