@@ -1868,7 +1868,7 @@ i.icon-down-open-big { margin: 0; }
 
 .user3 img { width: 75px; margin-right: 20px; vertical-align: top; -webkit-border-radius: 50px; -moz-border-radius: 50px; -ms-border-radius: 50px; -o-border-radius: 50px; border-radius: 50px; }
 
-.faqs { background-color: #fefef6; color: #40cd7e; }
+.faqs { background-color: #fefef6; color: #40cd7e; padding-top: 5%; padding-bottom: 5%; }
 .faqs .four.columns { text-align: center; }
 .faqs .four.columns h3 { right: -120%; font-size: 45px; position: relative; opacity: 1; -webkit-transition: all 1s; -moz-transition: all 1s; -o-transition: all 1s; transition: all 1s; -webkit-transition-timing-function: ease-out; -moz-transition-timing-function: ease-out; -o-transition-timing-function: ease-out; transition-timing-function: ease-out; -webkit-transition-delay: 0s; -moz-transition-delay: 0s; -o-transition-delay: 0s; transition-delay: 0s; }
 .faqs .four.columns h3.onscreen { font-size: 30px; right: 0%; opacity: 1; }

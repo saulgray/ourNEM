@@ -498,6 +498,8 @@ vertical-align: top;
 .faqs{
    background-color: #fefef6;
    color: #40cd7e;
+   padding-top: 5%;
+   padding-bottom: 5%;
    .four.columns{
       text-align: center;
       h3{
@@ -916,6 +918,7 @@ vertical-align: top;
 .faqs{
    margin-left: 10%;
    margin-right: 5%;
+
 }
 .faqs .four.columns .valign:before {
    @include respond("max-width: 768px") {
